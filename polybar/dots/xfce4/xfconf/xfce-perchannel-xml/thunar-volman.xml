@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="thunar-volman" version="1.0">
+  <property name="automount-media" type="empty">
+    <property name="enabled" type="bool" value="true"/>
+  </property>
+  <property name="automount-drives" type="empty">
+    <property name="enabled" type="bool" value="true"/>
+  </property>
+  <property name="autobrowse" type="empty">
+    <property name="enabled" type="bool" value="true"/>
+  </property>
+  <property name="autoplay-audio-cds" type="empty">
+    <property name="enabled" type="bool" value="true"/>
+    <property name="command" type="string" value="mount -t iso9660 -o ro /dev/cdrom /cd"/>
+  </property>
+</channel>

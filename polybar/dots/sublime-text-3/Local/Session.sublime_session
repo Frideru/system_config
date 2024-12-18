@@ -1,0 +1,770 @@
+{
+	"folder_history":
+	[
+	],
+	"last_version": 3211,
+	"last_window_id": 2,
+	"log_indexing": false,
+	"settings":
+	{
+		"new_window_height": 0.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/ordanax/.bashrc",
+				"/var/log/pacman.log",
+				"/home/ordanax/.config/i3/config",
+				"/home/ordanax/MEGA/001_ПРОГРАММА/help.todo",
+				"/home/ordanax/.config/polybar/scripts/vlc.py",
+				"/home/ordanax/.config/polybar/scripts/vpn-openvpn-isrunning.sh",
+				"/home/ordanax/.config/polybar/config",
+				"/home/ordanax/Музыка/best.m3u",
+				"/home/ordanax/.config/polybar/scripts/popup-calendar.sh",
+				"/home/ordanax/Загрузки/polybar-scripts-master/polybar-scripts/player-mpris-tail/README.md",
+				"/home/ordanax/Загрузки/polybar-scripts-master/polybar-scripts/player-mpv-tail/README.md",
+				"/home/ordanax/.config/polybar/scripts/updates-pacman-aurhelper.sh",
+				"/home/ordanax/.config/polybar/scripts/btc",
+				"/home/ordanax/.config/polybar/scripts/battery-combined-tlp.sh",
+				"/home/ordanax/.config/polybar/scripts/openweathermap-fullfeatured.sh",
+				"/home/ordanax/MEGA/PYTHON/time_of_day.sh",
+				"/home/ordanax/.config/polybar/scripts/player-mpris-tail.py",
+				"/home/ordanax/Загрузки/polybar-scripts-master/polybar-scripts/player-mpris-simple/player-mpris-simple.sh",
+				"/home/ordanax/Загрузки/polybar-scripts-master/polybar-scripts/player-mpv-tail/player-mpv-tail.py",
+				"/home/ordanax/Загрузки/polybar-scripts-master/polybar-scripts/player-moc/player-moc.sh",
+				"/home/ordanax/Загрузки/polybar-scripts-master/polybar-scripts/player-moc/README.md",
+				"/home/ordanax/Загрузки/polybar-scripts-master/polybar-scripts/player-mpris-tail/player-mpris-tail.py",
+				"/home/ordanax/MEGA/001_ПРОГРАММА/000_БП.todo",
+				"/home/ordanax/Загрузки/polybar-scripts-master/polybar-scripts/player-cmus/README.md",
+				"/home/ordanax/.mplayer/config",
+				"/home/ordanax/.config/polybar/scripts/config",
+				"/home/ordanax/Загрузки/player-mpris-tail.py",
+				"/home/ordanax/.mpd/mpd.conf",
+				"/home/ordanax/Загрузки/ncmpcpp-master/INSTALL",
+				"/home/ordanax/Загрузки/ncmpcpp-master/NEWS",
+				"/home/ordanax/Загрузки/ncmpcpp-master/config.sub",
+				"/home/ordanax/.ncmpcpp/error.log",
+				"/home/ordanax/Загрузки/ncmpcpp-master/src/charset.cpp",
+				"/home/ordanax/.git/HEAD",
+				"/home/ordanax/.git/config",
+				"/home/ordanax/MEGA/ПАПКА ОБМЕНА/Объявления Хироши.txt",
+				"/home/ordanax/.config/picom.conf",
+				"/home/ordanax/Загрузки/000",
+				"/home/ordanax/Документы/sublime-text-3/Packages/PlainTasks/Readme.md",
+				"/home/ordanax/Документы/sublime-text-3/Packages/PlainTasks/PlainTasks.py",
+				"/home/ordanax/Загрузки/archlive/airootfs/etc/calamares/branding/a4u/branding.desc",
+				"/home/ordanax/archlive/airootfs/usr/bin/a4u-welcome",
+				"/home/ordanax/Загрузки/archlive/airootfs/usr/share/calamares/branding/a4u/branding.desc",
+				"/home/ordanax/Загрузки/calamares-master/src/branding/a4u/branding.desc",
+				"/home/ordanax/Загрузки/archlive/packages.x86_64",
+				"/home/ordanax/Загрузки/calamares-master/pkg/PKGBUILD",
+				"/home/ordanax/Загрузки/calamares-master/settings.conf",
+				"/home/ordanax/Загрузки/calamares-master/src/modules/netinstall/netinstall.conf",
+				"/home/ordanax/Загрузки/archlive/airootfs/usr/share/calamares/branding/A4u/branding.desc",
+				"/home/ordanax/Загрузки/archlive/airootfs/etc/calamares/branding/A4u/branding.desc",
+				"/home/ordanax/Загрузки/calamares-master/data/calamares.desktop",
+				"/home/ordanax/Загрузки/calamares-master/data/calamares_polkit",
+				"/home/ordanax/archlive/packages.x86_64",
+				"/home/ordanax/Загрузки/calamares-ctlos/data/calamares_polkit",
+				"/home/ordanax/Загрузки/calamares-ctlos/src/branding/ctlos/branding.desc",
+				"/home/ordanax/Загрузки/calamares-ctlos/data/calamares.desktop",
+				"/home/ordanax/Загрузки/calamares-mine/calamares/data/calamares.desktop",
+				"/home/ordanax/Загрузки/calamares-mine/calamares/data/calamares_polkit",
+				"/home/ordanax/Загрузки/calamares-mine/calamares/pkg/PKGBUILD",
+				"/home/ordanax/Загрузки/calamares-master/calamares/pkg/PKGBUILD",
+				"/home/ordanax/packages-pacman.txt",
+				"/home/ordanax/packages-aur.txt",
+				"/home/ordanax/Загрузки/pack.sh",
+				"/home/ordanax/Загрузки/calamares-master/data/49-nopasswd-calamares.rules",
+				"/home/ordanax/archlive/mkarchiso",
+				"/home/ordanax/Загрузки/archlive/mkarchiso",
+				"/home/ordanax/Загрузки/Новый каталог/calamares-master/calamares/pkg/PKGBUILD",
+				"/home/ordanax/Загрузки/calamares-master/src/modules/packages/packages.conf",
+				"/home/ordanax/Загрузки/calamares-master/src/modules/removeuser/removeuser.conf",
+				"/home/ordanax/Загрузки/calamares-master/src/modules/shellprocess/shellprocess.conf",
+				"/home/ordanax/Загрузки/calamares-master/src/modules/unpackfs/unpackfs.conf",
+				"/home/ordanax/Загрузки/calamares-master/src/modules/users/users.conf",
+				"/home/ordanax/Загрузки/calamares-master/src/modules/welcome/welcome.conf",
+				"/home/ordanax/Загрузки/calamares-master/src/modules/bootloader/bootloader.conf",
+				"/home/ordanax/Загрузки/Новый каталог/calamares-master/calamares/pack.sh",
+				"/home/ordanax/Загрузки/Revolution_v.5.1.4(3.0)/read_me.txt",
+				"/home/ordanax/.config/autostart/ctlos-welcome.desktop",
+				"/home/ordanax/.config/autostart/a4u-welcome.desktop",
+				"/home/ordanax/Загрузки/archlive/airootfs/etc/skel/.config/autostart/a4u-welcome.desktop",
+				"/home/ordanax/Desktop/ctlos-welcome",
+				"/home/ordanax/Загрузки/archlive/airootfs/usr/bin/ctlos-welcome",
+				"/home/ordanax/Загрузки/archlive/airootfs/usr/bin/a4u-welcome",
+				"/home/ordanax/Desktop/a4u-welcome",
+				"/home/ordanax/001/ctlos-welcome",
+				"/home/ordanax/Загрузки/a4u-welcome",
+				"/home/ordanax/Загрузки/ctlos-welcome",
+				"/home/ordanax/.config/autostart/xflux.desktop",
+				"/home/ordanax/.config/autostart/conky.desktop",
+				"/home/ordanax/Загрузки/ctlos-welcome.desktop",
+				"/home/ordanax/001/.config/autostart/ctlos-welcome.desktop",
+				"/home/ordanax/001/usr/bin/a4u-welcome",
+				"/usr/bin/a4u-welcome",
+				"/home/ordanax/001/usr/share/applications/calamares.desktop",
+				"/home/ordanax/001/usr/share/applications/ctlos-welcome.desktop",
+				"/usr/share/applications/calamares.desktop",
+				"/usr/share/applications/ctlos-welcome.desktop",
+				"/home/ordanax/.config/autostart/megasync.desktop",
+				"/home/ordanax/done.txt"
+			],
+			"find":
+			{
+				"height": 39.0
+			},
+			"find_in_files":
+			{
+				"height": 139.0,
+				"where_history":
+				[
+					"",
+					"/home/ordanax/Загрузки/calamares-master"
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"mpv",
+					"uchardet",
+					"rubberband",
+					"vamp-plugin-sdk",
+					"fftw",
+					"openmpi",
+					"openssh",
+					"ldns",
+					"dnssec-anchors",
+					"hwloc",
+					"mujs",
+					"wshowkeys-git",
+					"boost",
+					"cmake",
+					"rhash",
+					"meson",
+					"ninja",
+					"гром",
+					"@today",
+					"cvlc",
+					"vlc",
+					"next",
+					"mpd",
+					"stop",
+					"~/polybar-scripts/",
+					"cal",
+					"haron",
+					"неделю",
+					"Юле",
+					"opacity",
+					"opa",
+					"picom",
+					"пункт",
+					"отметить",
+					"net",
+					"A4u",
+					"ctl",
+					"install",
+					"4u-welcome.desktop",
+					"don",
+					"ctl",
+					"calamares-master/calamares/pkg/src/calamares-3.2.23",
+					"wiki",
+					"news",
+					"ctl",
+					"ctlos",
+					"ctl",
+					"pyqt5",
+					"ctlos-welcome/img/",
+					"ctlos"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"",
+					"~/.config/polybar/scripts/",
+					"ordanax",
+					"yutube",
+					"a4u",
+					"a4u-welcome/img/",
+					"a4u"
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 24.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"output.unsaved_changes":
+			{
+				"height": 117.0
+			},
+			"pinned_build_system": "",
+			"replace":
+			{
+				"height": 44.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"",
+						"~/Документы/sublime-text-3/Packages/PlainTasks/Readme.md"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": false,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 0.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/home/ordanax/MEGA/001_ПРОГРАММА/000_БП.todo",
+					"settings":
+					{
+						"buffer_size": 3612,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/ordanax/.config/vlc/vlcrc",
+					"settings":
+					{
+						"buffer_size": 88118,
+						"encoding": "UTF-8 with BOM",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"contents": "# Next (string)\nkey-next=Media Next Track\n# Previous (string)\nkey-prev=Media Prev Track\n# Audio output module (string)\naout=alsa\n# Remember the audio volume (boolean)\nvolume-save=100",
+					"settings":
+					{
+						"buffer_size": 182,
+						"line_ending": "Unix",
+						"name": "# Next (string)"
+					}
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/ordanax/.config/vlc_back/vlc-qt-interface.conf",
+				"/home/ordanax/.config/i3/config",
+				"/home/ordanax/.config/vlc_back/vlcrc",
+				"/home/ordanax/.bashrc",
+				"/var/log/pacman.log",
+				"/home/ordanax/MEGA/001_ПРОГРАММА/help.todo",
+				"/home/ordanax/.config/polybar/scripts/vlc.py",
+				"/home/ordanax/.config/polybar/scripts/vpn-openvpn-isrunning.sh",
+				"/home/ordanax/.config/polybar/config",
+				"/home/ordanax/Музыка/best.m3u",
+				"/home/ordanax/.config/polybar/scripts/popup-calendar.sh",
+				"/home/ordanax/Загрузки/polybar-scripts-master/polybar-scripts/player-mpris-tail/README.md",
+				"/home/ordanax/Загрузки/polybar-scripts-master/polybar-scripts/player-mpv-tail/README.md",
+				"/home/ordanax/.config/polybar/scripts/updates-pacman-aurhelper.sh",
+				"/home/ordanax/.config/polybar/scripts/btc",
+				"/home/ordanax/.config/polybar/scripts/battery-combined-tlp.sh",
+				"/home/ordanax/.config/polybar/scripts/openweathermap-fullfeatured.sh",
+				"/home/ordanax/MEGA/PYTHON/time_of_day.sh",
+				"/home/ordanax/.config/polybar/scripts/player-mpris-tail.py",
+				"/home/ordanax/Загрузки/polybar-scripts-master/polybar-scripts/player-mpris-simple/player-mpris-simple.sh",
+				"/home/ordanax/Загрузки/polybar-scripts-master/polybar-scripts/player-mpv-tail/player-mpv-tail.py",
+				"/home/ordanax/Загрузки/polybar-scripts-master/polybar-scripts/player-moc/player-moc.sh",
+				"/home/ordanax/Загрузки/polybar-scripts-master/polybar-scripts/player-moc/README.md",
+				"/home/ordanax/Загрузки/polybar-scripts-master/polybar-scripts/player-mpris-tail/player-mpris-tail.py",
+				"/home/ordanax/MEGA/001_ПРОГРАММА/000_БП.todo",
+				"/home/ordanax/Загрузки/polybar-scripts-master/polybar-scripts/player-cmus/README.md",
+				"/home/ordanax/.mplayer/config",
+				"/home/ordanax/.config/polybar/scripts/config",
+				"/home/ordanax/Загрузки/player-mpris-tail.py",
+				"/home/ordanax/.mpd/mpd.conf",
+				"/home/ordanax/Загрузки/ncmpcpp-master/INSTALL",
+				"/home/ordanax/Загрузки/ncmpcpp-master/NEWS",
+				"/home/ordanax/Загрузки/ncmpcpp-master/config.sub",
+				"/home/ordanax/.ncmpcpp/error.log",
+				"/home/ordanax/Загрузки/ncmpcpp-master/src/charset.cpp",
+				"/home/ordanax/.git/HEAD",
+				"/home/ordanax/.git/config",
+				"/home/ordanax/MEGA/ПАПКА ОБМЕНА/Объявления Хироши.txt",
+				"/home/ordanax/.config/picom.conf",
+				"/home/ordanax/Загрузки/000",
+				"/home/ordanax/Документы/sublime-text-3/Packages/PlainTasks/Readme.md",
+				"/home/ordanax/Документы/sublime-text-3/Packages/PlainTasks/PlainTasks.py",
+				"/home/ordanax/Загрузки/archlive/airootfs/etc/calamares/branding/a4u/branding.desc",
+				"/home/ordanax/archlive/airootfs/usr/bin/a4u-welcome",
+				"/home/ordanax/Загрузки/archlive/airootfs/usr/share/calamares/branding/a4u/branding.desc",
+				"/home/ordanax/Загрузки/calamares-master/src/branding/a4u/branding.desc",
+				"/home/ordanax/Загрузки/archlive/packages.x86_64",
+				"/home/ordanax/Загрузки/calamares-master/pkg/PKGBUILD",
+				"/home/ordanax/Загрузки/calamares-master/settings.conf",
+				"/home/ordanax/Загрузки/calamares-master/src/modules/netinstall/netinstall.conf",
+				"/home/ordanax/Загрузки/archlive/airootfs/usr/share/calamares/branding/A4u/branding.desc",
+				"/home/ordanax/Загрузки/archlive/airootfs/etc/calamares/branding/A4u/branding.desc",
+				"/home/ordanax/Загрузки/calamares-master/data/calamares.desktop",
+				"/home/ordanax/Загрузки/calamares-master/data/calamares_polkit",
+				"/home/ordanax/archlive/packages.x86_64",
+				"/home/ordanax/Загрузки/calamares-ctlos/data/calamares_polkit",
+				"/home/ordanax/Загрузки/calamares-ctlos/src/branding/ctlos/branding.desc",
+				"/home/ordanax/Загрузки/calamares-ctlos/data/calamares.desktop",
+				"/home/ordanax/Загрузки/calamares-mine/calamares/data/calamares.desktop",
+				"/home/ordanax/Загрузки/calamares-mine/calamares/data/calamares_polkit",
+				"/home/ordanax/Загрузки/calamares-mine/calamares/pkg/PKGBUILD",
+				"/home/ordanax/Загрузки/calamares-master/calamares/pkg/PKGBUILD",
+				"/home/ordanax/packages-pacman.txt",
+				"/home/ordanax/packages-aur.txt",
+				"/home/ordanax/Загрузки/pack.sh",
+				"/home/ordanax/Загрузки/calamares-master/data/49-nopasswd-calamares.rules",
+				"/home/ordanax/archlive/mkarchiso",
+				"/home/ordanax/Загрузки/archlive/mkarchiso",
+				"/home/ordanax/Загрузки/Новый каталог/calamares-master/calamares/pkg/PKGBUILD",
+				"/home/ordanax/Загрузки/calamares-master/src/modules/packages/packages.conf",
+				"/home/ordanax/Загрузки/calamares-master/src/modules/removeuser/removeuser.conf",
+				"/home/ordanax/Загрузки/calamares-master/src/modules/shellprocess/shellprocess.conf",
+				"/home/ordanax/Загрузки/calamares-master/src/modules/unpackfs/unpackfs.conf",
+				"/home/ordanax/Загрузки/calamares-master/src/modules/users/users.conf",
+				"/home/ordanax/Загрузки/calamares-master/src/modules/welcome/welcome.conf",
+				"/home/ordanax/Загрузки/calamares-master/src/modules/bootloader/bootloader.conf",
+				"/home/ordanax/Загрузки/Новый каталог/calamares-master/calamares/pack.sh",
+				"/home/ordanax/Загрузки/Revolution_v.5.1.4(3.0)/read_me.txt",
+				"/home/ordanax/.config/autostart/ctlos-welcome.desktop",
+				"/home/ordanax/.config/autostart/a4u-welcome.desktop",
+				"/home/ordanax/Загрузки/archlive/airootfs/etc/skel/.config/autostart/a4u-welcome.desktop",
+				"/home/ordanax/Desktop/ctlos-welcome",
+				"/home/ordanax/Загрузки/archlive/airootfs/usr/bin/ctlos-welcome",
+				"/home/ordanax/Загрузки/archlive/airootfs/usr/bin/a4u-welcome",
+				"/home/ordanax/Desktop/a4u-welcome",
+				"/home/ordanax/001/ctlos-welcome",
+				"/home/ordanax/Загрузки/a4u-welcome",
+				"/home/ordanax/Загрузки/ctlos-welcome",
+				"/home/ordanax/.config/autostart/xflux.desktop",
+				"/home/ordanax/.config/autostart/conky.desktop",
+				"/home/ordanax/Загрузки/ctlos-welcome.desktop",
+				"/home/ordanax/001/.config/autostart/ctlos-welcome.desktop",
+				"/home/ordanax/001/usr/bin/a4u-welcome",
+				"/usr/bin/a4u-welcome",
+				"/home/ordanax/001/usr/share/applications/calamares.desktop",
+				"/home/ordanax/001/usr/share/applications/ctlos-welcome.desktop",
+				"/usr/share/applications/calamares.desktop",
+				"/usr/share/applications/ctlos-welcome.desktop",
+				"/home/ordanax/.config/autostart/megasync.desktop",
+				"/home/ordanax/done.txt"
+			],
+			"find":
+			{
+				"height": 39.0
+			},
+			"find_in_files":
+			{
+				"height": 139.0,
+				"where_history":
+				[
+					"",
+					"/home/ordanax/Загрузки/calamares-master"
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"audio",
+					"pulse",
+					"prev",
+					"(in %)",
+					"100",
+					"Volume",
+					"mpv",
+					"uchardet",
+					"rubberband",
+					"vamp-plugin-sdk",
+					"fftw",
+					"openmpi",
+					"openssh",
+					"ldns",
+					"dnssec-anchors",
+					"hwloc",
+					"mujs",
+					"wshowkeys-git",
+					"boost",
+					"cmake",
+					"rhash",
+					"meson",
+					"ninja",
+					"гром",
+					"@today",
+					"cvlc",
+					"vlc",
+					"next",
+					"mpd",
+					"stop",
+					"~/polybar-scripts/",
+					"cal",
+					"haron",
+					"неделю",
+					"Юле",
+					"opacity",
+					"opa",
+					"picom",
+					"пункт",
+					"отметить",
+					"net",
+					"A4u",
+					"ctl",
+					"install",
+					"4u-welcome.desktop",
+					"don",
+					"ctl",
+					"calamares-master/calamares/pkg/src/calamares-3.2.23",
+					"wiki",
+					"news",
+					"ctl",
+					"ctlos",
+					"ctl",
+					"pyqt5",
+					"ctlos-welcome/img/",
+					"ctlos"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"",
+					"~/.config/polybar/scripts/",
+					"ordanax",
+					"yutube",
+					"a4u",
+					"a4u-welcome/img/",
+					"a4u"
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"selected": 1,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/home/ordanax/MEGA/001_ПРОГРАММА/000_БП.todo",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 3612,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1217,
+										1217
+									]
+								],
+								"settings":
+								{
+									"plain_tasks_remain_time_phantoms":
+									[
+									],
+									"spell_check": false,
+									"syntax": "Packages/PlainTasks/PlainTasks.sublime-syntax",
+									"word_wrap": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 2,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/ordanax/.config/vlc/vlcrc",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 88118,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										32364,
+										32369
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 25794.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 182,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										182,
+										182
+									]
+								],
+								"settings":
+								{
+									"auto_name": "# Next (string)",
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 24.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"output.unsaved_changes":
+			{
+				"height": 117.0
+			},
+			"pinned_build_system": "",
+			"position": "0,1,0,0,0,0,0,0,0,1366,768",
+			"project": "",
+			"replace":
+			{
+				"height": 44.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"",
+						"~/Документы/sublime-text-3/Packages/PlainTasks/Readme.md"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": false,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 1,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}

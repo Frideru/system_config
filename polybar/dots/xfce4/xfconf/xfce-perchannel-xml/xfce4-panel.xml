@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-panel" version="1.0">
+  <property name="configver" type="int" value="2"/>
+  <property name="panels" type="array">
+    <value type="int" value="1"/>
+    <property name="panel-1" type="empty">
+      <property name="position" type="string" value="p=6;x=683;y=15"/>
+      <property name="length" type="uint" value="100"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="size" type="uint" value="27"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="7"/>
+        <value type="int" value="1"/>
+        <value type="int" value="27"/>
+        <value type="int" value="28"/>
+        <value type="int" value="33"/>
+        <value type="int" value="14"/>
+        <value type="int" value="15"/>
+        <value type="int" value="3"/>
+        <value type="int" value="13"/>
+        <value type="int" value="4"/>
+        <value type="int" value="20"/>
+        <value type="int" value="16"/>
+        <value type="int" value="6"/>
+        <value type="int" value="5"/>
+        <value type="int" value="9"/>
+        <value type="int" value="25"/>
+        <value type="int" value="2"/>
+      </property>
+      <property name="autohide-behavior" type="uint" value="0"/>
+      <property name="background-alpha" type="uint" value="0"/>
+      <property name="disable-struts" type="bool" value="false"/>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="background-color" type="array">
+        <value type="uint" value="12079"/>
+        <value type="uint" value="13364"/>
+        <value type="uint" value="16191"/>
+        <value type="uint" value="65535"/>
+      </property>
+      <property name="background-image" type="string" value=""/>
+      <property name="length-adjust" type="bool" value="true"/>
+      <property name="leave-opacity" type="uint" value="100"/>
+      <property name="enter-opacity" type="uint" value="100"/>
+      <property name="mode" type="uint" value="0"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0.010333"/>
+        <value type="double" value="0.103333"/>
+        <value type="double" value="0.016953"/>
+        <value type="double" value="0.000000"/>
+      </property>
+      <property name="icon-size" type="uint" value="0"/>
+    </property>
+  </property>
+  <property name="plugins" type="empty">
+    <property name="plugin-2" type="string" value="actions">
+      <property name="items" type="array">
+        <value type="string" value="-lock-screen"/>
+        <value type="string" value="-switch-user"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="-suspend"/>
+        <value type="string" value="-hibernate"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="+shutdown"/>
+        <value type="string" value="-restart"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="-logout"/>
+        <value type="string" value="-logout-dialog"/>
+      </property>
+      <property name="appearance" type="uint" value="0"/>
+    </property>
+    <property name="plugin-3" type="string" value="tasklist">
+      <property name="flat-buttons" type="bool" value="true"/>
+      <property name="sort-order" type="uint" value="4"/>
+      <property name="grouping" type="uint" value="1"/>
+      <property name="show-labels" type="bool" value="false"/>
+      <property name="show-handle" type="bool" value="false"/>
+      <property name="window-scrolling" type="bool" value="false"/>
+    </property>
+    <property name="plugin-15" type="string" value="separator">
+      <property name="expand" type="bool" value="true"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-5" type="string" value="clock">
+      <property name="timezone" type="string" value=""/>
+      <property name="digital-format" type="string" value="%R"/>
+      <property name="mode" type="uint" value="2"/>
+    </property>
+    <property name="plugin-6" type="string" value="systray">
+      <property name="names-visible" type="array">
+        <value type="string" value="stacer"/>
+        <value type="string" value="vk-messenger"/>
+        <value type="string" value="cherrytree"/>
+        <value type="string" value="xscreenshot"/>
+        <value type="string" value="orage"/>
+        <value type="string" value="telegramdesktop"/>
+        <value type="string" value="pamac-tray"/>
+        <value type="string" value="nxclient.bin"/>
+        <value type="string" value="pidgin"/>
+        <value type="string" value="electron"/>
+        <value type="string" value="screencloud"/>
+        <value type="string" value="gromit-mpx"/>
+        <value type="string" value="skypeforlinux"/>
+        <value type="string" value="quamachi"/>
+        <value type="string" value="fluxgui"/>
+        <value type="string" value="qbittorrent"/>
+        <value type="string" value="flameshot"/>
+        <value type="string" value="psensor"/>
+        <value type="string" value="goldendict"/>
+        <value type="string" value="gajim"/>
+        <value type="string" value="obs"/>
+        <value type="string" value="discord"/>
+        <value type="string" value="retroshare"/>
+        <value type="string" value="javaembeddedframe"/>
+        <value type="string" value="steam"/>
+        <value type="string" value="todoist"/>
+        <value type="string" value="kalu"/>
+        <value type="string" value="диспетчер задач"/>
+        <value type="string" value="rainlendar"/>
+        <value type="string" value="joxi"/>
+        <value type="string" value="терминал xfce"/>
+        <value type="string" value="superproductivity"/>
+        <value type="string" value="docfetcher"/>
+        <value type="string" value="vlc"/>
+        <value type="string" value="veracrypt"/>
+        <value type="string" value="telegram-desktop"/>
+        <value type="string" value="viberpc"/>
+        <value type="string" value="volumeicon"/>
+        <value type="string" value="gxneur"/>
+        <value type="string" value="заметки"/>
+        <value type="string" value="megasync"/>
+        <value type="string" value="апплет networkmanager"/>
+        <value type="string" value="thunar"/>
+        <value type="string" value="менеджер буфера обмена clipman"/>
+        <value type="string" value="anydesk"/>
+        <value type="string" value="dropbox"/>
+      </property>
+      <property name="show-frame" type="bool" value="false"/>
+      <property name="names-ordered" type="array">
+        <value type="string" value="anydesk"/>
+        <value type="string" value="anydesk.bin"/>
+        <value type="string" value="electron6"/>
+        <value type="string" value="zoom"/>
+        <value type="string" value="slack"/>
+        <value type="string" value="steam"/>
+        <value type="string" value="hexchat"/>
+        <value type="string" value="whatsapp-nativefier-dark"/>
+        <value type="string" value="todoist"/>
+        <value type="string" value="clementine"/>
+        <value type="string" value="менеджер буфера обмена clipman"/>
+        <value type="string" value="javaembeddedframe"/>
+        <value type="string" value="gxneur"/>
+        <value type="string" value="qbittorrent"/>
+        <value type="string" value="pidgin"/>
+        <value type="string" value="telegramdesktop"/>
+        <value type="string" value="vlc"/>
+        <value type="string" value="obs"/>
+        <value type="string" value="диспетчер задач"/>
+        <value type="string" value="megasync"/>
+        <value type="string" value="flameshot"/>
+        <value type="string" value="thunar"/>
+        <value type="string" value="veracrypt"/>
+        <value type="string" value="goldendict"/>
+        <value type="string" value="апплет networkmanager"/>
+        <value type="string" value="pamac-tray"/>
+      </property>
+    </property>
+    <property name="plugin-7" type="string" value="whiskermenu"/>
+    <property name="plugin-9" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="mpris-players" type="string" value="audacious;chromium.instance10070;chromium.instance10786;chromium.instance11480;chromium.instance11604;chromium.instance15351;chromium.instance18181;chromium.instance18678;chromium.instance19213;chromium.instance21638;chromium.instance2262;chromium.instance2752;chromium.instance2856;chromium.instance3015;chromium.instance42533;chromium.instance6092;chromium.instance6338;chromium.instance6758;chromium.instance7588;chromium.instance8083;chromium.instance9387;clementine;cmus;vlc;vlc.instance10241;vlc.instance10324;vlc.instance10353;vlc.instance10541;vlc.instance1056;vlc.instance1059;vlc.instance10671;vlc.instance10688;vlc.instance10729;vlc.instance10827;vlc.instance1083;vlc.instance1097;vlc.instance11115;vlc.instance11348;vlc.instance11387;vlc.instance11409;vlc.instance11529;vlc.instance11540;vlc.instance11655;vlc.instance11735;vlc.instance12333;vlc.instance12431;vlc.instance12788;vlc.instance1283;vlc.instance1298;vlc.instance13535;vlc.instance13548;vlc.instance1372;vlc.instance1374;vlc.instance13850;vlc.instance13863;vlc.instance13922;vlc.instance13997;vlc.instance1415;vlc.instance14182;vlc.instance1448;vlc.instance14576;vlc.instance14817;vlc.instance14832;vlc.instance1543;vlc.instance15592;vlc.instance1573;vlc.instance1580;vlc.instance15849;vlc.instance1596;vlc.instance1604;vlc.instance1632;vlc.instance1633;vlc.instance16482;vlc.instance16947;vlc.instance17235;vlc.instance1757;vlc.instance18145;vlc.instance1855;vlc.instance1859;vlc.instance19053;vlc.instance1917;vlc.instance1930;vlc.instance1942;vlc.instance1956;vlc.instance1981;vlc.instance20045;vlc.instance21131;vlc.instance21183;vlc.instance2153;vlc.instance2187;vlc.instance2205;vlc.instance22071;vlc.instance2326;vlc.instance2361;vlc.instance2459;vlc.instance24667;vlc.instance24787;vlc.instance26017;vlc.instance2615;vlc.instance2667;vlc.instance26918;vlc.instance2709;vlc.instance2737;vlc.instance29409;vlc.instance2997;vlc.instance30066;vlc.instance3023;vlc.instance3029;vlc.instance30932;vlc.instance3149;vlc.instance3152;vlc.instance3182;vlc.instance3192;vlc.instance3205;vlc.instance3213;vlc.instance33270;vlc.instance3458;vlc.instance3473;vlc.instance3518;vlc.instance3572;vlc.instance3586;vlc.instance3667;vlc.instance3774;vlc.instance3822;vlc.instance3980;vlc.instance4080;vlc.instance4127;vlc.instance4297;vlc.instance4551;vlc.instance4814;vlc.instance4819;vlc.instance4860;vlc.instance5099;vlc.instance5132;vlc.instance5457;vlc.instance5675;vlc.instance5698;vlc.instance5744;vlc.instance5839;vlc.instance5941;vlc.instance5994;vlc.instance6546;vlc.instance6663;vlc.instance6785;vlc.instance6866;vlc.instance6961;vlc.instance7293;vlc.instance7368;vlc.instance7414;vlc.instance7480;vlc.instance7518;vlc.instance7551;vlc.instance7568;vlc.instance7912;vlc.instance7921;vlc.instance7939;vlc.instance8138;vlc.instance8313;vlc.instance841;vlc.instance863;vlc.instance8671;vlc.instance9138;vlc.instance935;vlc.instance9390;vlc.instance9408;vlc.instance962;vlc.instance9737;vlc.instance9785"/>
+    </property>
+    <property name="notes" type="empty">
+      <property name="new-window" type="empty">
+        <property name="width" type="int" value="300"/>
+        <property name="height" type="int" value="375"/>
+        <property name="always-on-top" type="bool" value="true"/>
+      </property>
+      <property name="global" type="empty">
+        <property name="skip-taskbar-hint" type="bool" value="true"/>
+      </property>
+    </property>
+    <property name="clipman" type="empty">
+      <property name="settings" type="empty">
+        <property name="max-texts-in-history" type="uint" value="100"/>
+        <property name="enable-actions" type="bool" value="false"/>
+        <property name="show-qr-code" type="bool" value="false"/>
+        <property name="add-primary-clipboard" type="bool" value="false"/>
+        <property name="save-on-quit" type="bool" value="false"/>
+        <property name="max-images-in-history" type="uint" value="0"/>
+      </property>
+      <property name="tweaks" type="empty">
+        <property name="never-confirm-history-clear" type="bool" value="true"/>
+      </property>
+    </property>
+    <property name="plugin-25" type="string" value="notification-plugin"/>
+    <property name="plugin-13" type="string" value="separator">
+      <property name="expand" type="bool" value="true"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-16" type="string" value="xkb">
+      <property name="display-type" type="uint" value="2"/>
+      <property name="caps-lock-indicator" type="bool" value="true"/>
+      <property name="display-tooltip-icon" type="bool" value="true"/>
+      <property name="display-name" type="uint" value="1"/>
+    </property>
+    <property name="plugin-20" type="string" value="weather"/>
+    <property name="plugin-27" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15678561231.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-28" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15678561792.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-33" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15678563737.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-1" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15678723831.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-4" type="string" value="pager">
+      <property name="rows" type="uint" value="1"/>
+      <property name="miniature-view" type="bool" value="false"/>
+    </property>
+    <property name="plugin-14" type="string" value="separator"/>
+  </property>
+</channel>
