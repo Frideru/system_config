@@ -241,10 +241,10 @@ set $focused-ws #525252
 set $bar-color  #5E5E5E
 
 # class                 border  bground text    indicator child_border
-client.focused          #C5C5C8 #5BADC5 #000000 #5BADC5   #5BADC5
-client.focused_inactive #C5C5C8 #E9E9EA #8A8A8E #E9E9EA   #E9E9EA
-client.unfocused        #C5C5C8 #E4E4E6 #000000 #E4E4E6   #E4E4E6
+client.focused          #C5C5C8 #E4E4E6 #000000 #5BADC5   #5BADC5
+client.focused_inactive #C5C5C8 #EEEEEF #C4C4C6 #E9E9EA   #E9E9EA
+client.unfocused        #C5C5C8 #E9E9EA #8A8A8E #E4E4E6   #E4E4E6
 client.urgent           #C5C5C8 #FC3C2F #000000 #FC3C2F   #FC3C2F
-client.placeholder      #C5C5C8 #EEEEEF #C4C4C6 #EEEEEF   #EEEEEF
+client.placeholder      #C5C5C8 #F4F4F5 #DCDCDD #EEEEEF   #EEEEEF
 
 client.background       #F2F2F7
