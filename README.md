@@ -1,3 +1,4 @@
+[rofi theme](https://github.com/catppuccin/rofi/tree/main/basic)
 ## Neovim install
 ```sh
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
