@@ -14,11 +14,18 @@ return require('packer').startup(function(use)
       require('lualine').setup()
   end, }
   -- Тема в стиле Rose Pine
+  -- use({
+  --   'rose-pine/neovim',
+  --   as = 'rose-pine',
+  --   config = function()
+  --     vim.cmd('colorscheme rose-pine')
+  --   end
+  -- })
   use({
-    'rose-pine/neovim',
-    as = 'rose-pine',
+    'catppuccin/nvim',
+    as = "catppuccin",
     config = function()
-      vim.cmd('colorscheme rose-pine')
+      vim.cmd('colorscheme catppuccin')
     end
   })
   ---------------------------------------------------------
@@ -93,5 +100,5 @@ return require('packer').startup(function(use)
   -- РАЗНОЕ
   ---------------------------------------------------------
   -- Даже если включена русская раскладка, то nvim-команды будут работать
-  use 'powerman/vim-plugin-ruscmd'
+  -- use 'powerman/vim-plugin-ruscmd'
 end)

@@ -45,7 +45,7 @@ exec --no-startup-id nm-applet
 # Display Wallpaper (light mode)
 # exec_always feh --bg-fill /home/fzykin/Images/background.jpg
 # Display Wallpaper (dark mode)
-exec_always feh --bg-fill /home/fzykin/Images/abstract-warp.png
+exec_always feh --bg-fill /home/fzykin/Images/muench.png
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -135,16 +135,16 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1:"
-set $ws2 "2:"
-set $ws3 "3:"
-set $ws4 "4:"
-set $ws5 "5:󰌽"
-set $ws6 "6:󰌽"
-set $ws7 "7:󰌽"
-set $ws8 "8:󰌽"
-set $ws9 "9:󰌽"
-set $ws10 "10:󰌽"
+set $ws1 "1: "
+set $ws2 "2: "
+set $ws3 "3: "
+set $ws4 "4: "
+set $ws5 "5:󰌽 "
+set $ws6 "6:󰌽 "
+set $ws7 "7:󰌽 "
+set $ws8 "8:󰌽 "
+set $ws9 "9:󰌽 "
+set $ws10 "10:󰌽 "
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -214,20 +214,18 @@ bindsym $mod+r mode "resize"
 bar {
     status_command SCRIPT_DIR=/home/fzykin/.config/i3blocks/scripts/ i3blocks 
     position top
-#         status_command i3status -c /home/$user/.config/i3status/i3status.conf
-#         position top
     separator_symbol "|"
-#         i3bar_command i3bar --transparency
     tray_output none
     colors {
-            background $bar-color
-            separator #191919
-            #                       border          background      text
-            focused_workspace       $focused-ws     $focused-ws     $text
-            inactive_workspace      $in-bgcolor     $in-bgcolor     $text
-            active_workspace        $in-bgcolor     $in-bgcolor     $text
-            urgent_workspace        $u-bgcolor      $u-bgcolor      $text   
-
+        background #F2F2F7
+        statusline #000000
+        separator  #C5C5C8
+        
+        focused_workspace  #C5C5C8 #5BADC5 #000000
+        active_workspace   #C5C5C8 #F2F2F7 #000000
+        inactive_workspace #C5C5C8 #FFFFFF #8A8A8E
+        urgent_workspace   #C5C5C8 #FC3C2F #000000
+        binding_mode       #C5C5C8 #FC3C2F #000000
     }
 }
 
@@ -239,12 +237,14 @@ set $u-bgcolor  #b4b8d9
 set $indicator  #686869
 set $in-text    #686869
 
-set $focused-ws #52525280
-set $bar-color  #5E5E5E0D
+set $focused-ws #525252
+set $bar-color  #5E5E5E
 
-#                       border          background      text            indicator (a line which shows where the next window will be placed)     
-client.focused          $bgcolor        $bgcolor        $text           $indicator
-client.unfocused        $in-bgcolor     $in-bgcolor     $in-text        $in-bgcolor
-client.focused_inactive $in-bgcolor     $in-bgcolor     $in-text        $in-bgcolor
-client.urgent           $u-bgcolor      $u-bgcolor      $text           $u-bgcolor
+# class                 border  bground text    indicator child_border
+client.focused          #C5C5C8 #5BADC5 #000000 #5BADC5   #5BADC5
+client.focused_inactive #C5C5C8 #E9E9EA #8A8A8E #E9E9EA   #E9E9EA
+client.unfocused        #C5C5C8 #E4E4E6 #000000 #E4E4E6   #E4E4E6
+client.urgent           #C5C5C8 #FC3C2F #000000 #FC3C2F   #FC3C2F
+client.placeholder      #C5C5C8 #EEEEEF #C4C4C6 #EEEEEF   #EEEEEF
 
+client.background       #F2F2F7
