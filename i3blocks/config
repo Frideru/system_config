@@ -24,7 +24,7 @@
 #
 # The top properties below are applied to every block, but can be overridden.
 # Each block command defaults to the script name to avoid boilerplate.
-command=/home/fzykin/.config/i3blocks/scripts/$BLOCK_NAME
+command=/home/dss/.config/i3blocks/scripts/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
@@ -33,32 +33,21 @@ markup=none
 # The first parameter sets the step (and units to display)
 # The second parameter overrides the mixer selection
 # See the script for details.
-[volume]
+
+#[volume]
 #label=VOL
-label=♪
-instance=Master
+#label=♪
+#instance=Master
 #instance=PCM
-interval=once
-signal=10
+#interval=once
+#signal=10
 
-[mediaplayer]
-label=♪
+#[mediaplayer]
+#label=♪
 # instance=%all
-interval=5
-signal=10
+#interval=5
+#signal=10
 
-[kbdd_layout]
-#command=$SCRIPT_DIR/kbdd_layout
-interval=persist
-
-# Memory usage
-#
-# The type defaults to "mem" if the instance is not specified.
-[memory]
-command=free -m | awk 'NR==2{printf "%.1fG", $3/1024 }'
-label=
-separator=false
-interval=30
 
 # [memory]
 # label=SWAP
@@ -76,6 +65,35 @@ label= :
 instance=/nas
 interval=30
 
+
+# Memory usage
+#
+# The type defaults to "mem" if the instance is not specified.
+[memory]
+command=free -m | awk 'NR==2{printf "%.1fG", $3/1024 }'
+label=
+separator=false
+interval=5 #30
+
+# CPU usage
+#
+# The script may be called with -w and -c switches to specify thresholds,
+# see the script for details.
+
+[cpu_usage2]
+command=$SCRIPT_DIR/cpu_usage2
+markup=pango
+interval=persist
+#min_width=CPU 100.00%
+#REFRESH_TIME=1
+#LABEL=CPU 
+#WARN_PERCENT=50
+#CRIT_PERCENT=80
+#DECIMALS=2
+
+#[load_average]
+#interval=10
+
 # Network interface monitoring
 #
 # If the instance is not specified, use the interface used for default route.
@@ -86,21 +104,38 @@ color=#00FF00
 interval=10
 separator=false
 
-# CPU usage
-#
-# The script may be called with -w and -c switches to specify thresholds,
-# see the script for details.
-[cpu_usage]
-label=CPU
-interval=10
-min_width=CPU: 100.00%
-#separator=false
-
-#[load_average]
-#interval=10
-
 # Date Time
 #
 [time]
 command=date '+%Y-%m-%d %H:%M:%S'
 interval=5
+
+# [battery2]
+# command=$SCRIPT_DIR/battery2
+# markup=pango
+# interval=30
+
+[batterybar]
+command=$SCRIPT_DIR/batterybar
+#label=
+interval=5
+markup=pango
+min_width=bat: ■
+# Discharging colors low to high
+#C1=#FF0027
+#C2=#FF3B05
+#C3=#FFB923
+#C4=#FFD000
+#C5=#E4FF00
+#C6=#ADFF00
+#C7=#6DFF00
+#C8=#10BA00
+#CHARGING_COLOR=#00AFE3
+#FULL_COLOR=#FFFFFF
+#AC_COLOR=#535353
+
+
+[kbdd_layout]
+#command=$SCRIPT_DIR/kbdd_layout
+interval=persist
+

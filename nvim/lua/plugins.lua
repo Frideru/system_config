@@ -22,10 +22,10 @@ return require('packer').startup(function(use)
   --   end
   -- })
   use({
-    'catppuccin/nvim',
-    as = "catppuccin",
+    'Mofiqul/vscode.nvim',
+    as = "vscode",
     config = function()
-      vim.cmd('colorscheme catppuccin')
+      vim.cmd('colorscheme vscode')
     end
   })
   ---------------------------------------------------------
@@ -101,4 +101,6 @@ return require('packer').startup(function(use)
   ---------------------------------------------------------
   -- Даже если включена русская раскладка, то nvim-команды будут работать
   -- use 'powerman/vim-plugin-ruscmd'
+  -- use 'lervag/vimtex'
+  -- vim.g.vimtex_view_method = 'zathura'
 end)
