@@ -23,6 +23,8 @@ default_floating_border normal
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
 
+#exec picom --config /home/fzykin/.config/picom/picom.conf
+
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
@@ -39,8 +41,11 @@ bindsym Print exec flameshot gui --clipboard
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
+
 # exec_always --no-startup-id xrandr --output DVI-D-1 --rotate right
-exec_always --no-startup-id xrandr --output HDMI-1 --rotate left
+# exec_always --no-startup-id xrandr --output HDMI-1 --rotate left
+exec --no-startup-id /home/fzykin/.scripts/arandr_config.sh
+
 # Transparency with picom compositor
 # exec_always picom --config ~/.config/picom/picom.conf
 # Display Wallpaper (light mode)
@@ -64,9 +69,12 @@ for_window [class="Pavucontrol"] floating enable resize set 900 500
 for_window [title="Терминатор Параметры"] floating enable 
 for_window [class="TelegramDesktop"] floating enable resize set 500 800
 for_window [class="Nemo"] floating enable resize set 800 600
+for_window [class="Plank"] floating enable
+
 
 for_window [class="obsidian"] move to workspace $ws6
 for_window [class="vlc"] move to workspace $ws7
+for_window [class="thunderbird-default"] move to workspace $ws8
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
@@ -147,8 +155,8 @@ set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6:󰎚 "
 set $ws7 "7:󰕼 "
-set $ws8 "8"
-set $ws9 "9"
+set $ws8 "8: "
+set $ws9 "9:󰈙 "
 set $ws10 "10"
 
 # switch to workspace
