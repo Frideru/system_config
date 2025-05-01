@@ -69,8 +69,6 @@ for_window [class="Pavucontrol"] floating enable resize set 900 500
 for_window [title="Терминатор Параметры"] floating enable 
 for_window [class="TelegramDesktop"] floating enable resize set 500 800
 for_window [class="Nemo"] floating enable resize set 800 600
-for_window [class="Plank"] floating enable
-
 
 for_window [class="obsidian"] move to workspace $ws6
 for_window [class="vlc"] move to workspace $ws7
