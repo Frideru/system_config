@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# NOTE: mutt picom conky lxappearance
+
+sudo apt install gnome-disk-utility arandr network-manager-gnome flameshot vlc geeqie libreoffice nemo blueman mousepad evince
+

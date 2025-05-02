@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo apt install xorg i3 i3blocks slim terminator network-manager pulseaudio pavucontrol firefox-esr policykit-1-gnome curl gcc xclip feh mc htop rofi vim
