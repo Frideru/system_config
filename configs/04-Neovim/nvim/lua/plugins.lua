@@ -13,14 +13,7 @@ return require('packer').startup(function(use)
       config = function()
       require('lualine').setup()
   end, }
-  -- Тема в стиле Rose Pine
-  -- use({
-  --   'rose-pine/neovim',
-  --   as = 'rose-pine',
-  --   config = function()
-  --     vim.cmd('colorscheme rose-pine')
-  --   end
-  -- })
+  -- Тема из VS Code
   use({
     'Mofiqul/vscode.nvim',
     as = "vscode",
@@ -96,11 +89,4 @@ return require('packer').startup(function(use)
 
   -- Линтер, работает для всех языков
   use 'dense-analysis/ale'
-  ---------------------------------------------------------
-  -- РАЗНОЕ
-  ---------------------------------------------------------
-  -- Даже если включена русская раскладка, то nvim-команды будут работать
-  -- use 'powerman/vim-plugin-ruscmd'
-  -- use 'lervag/vimtex'
-  -- vim.g.vimtex_view_method = 'zathura'
 end)
