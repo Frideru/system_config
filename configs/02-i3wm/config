@@ -23,7 +23,7 @@ default_floating_border normal
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
 
-#exec picom --config /home/fzykin/.config/picom/picom.conf
+#exec picom --config $HOME/.config/picom/picom.conf
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
@@ -35,7 +35,7 @@ exec --no-startup-id dex --autostart --environment i3
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
 #exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-bindsym ctrl+Mod1+l exec --no-startup-id bash -c 'i3lock -c 000000 -i /home/fzykin/Images/wallpapers/g8ud4yocwbeb1.png && sleep 3 && xset dpms force off'
+bindsym ctrl+Mod1+l exec --no-startup-id bash -c 'i3lock -c 000000 -i $HOME/Images/wallpapers/g8ud4yocwbeb1.png && sleep 3 && xset dpms force off'
 bindsym ctrl+Mod1+p exec rofi -show power-menu -modi power-menu:rofi-power-menu
 bindsym Print exec flameshot gui --clipboard
 # NetworkManager is the most popular way to manage wireless networks on Linux,
@@ -44,14 +44,14 @@ exec --no-startup-id nm-applet
 
 # exec_always --no-startup-id xrandr --output DVI-D-1 --rotate right
 # exec_always --no-startup-id xrandr --output HDMI-1 --rotate left
-exec --no-startup-id /home/fzykin/.scripts/arandr_config.sh
+exec --no-startup-id $HOME/.scripts/arandr_config.sh
 
 # Transparency with picom compositor
 # exec_always picom --config ~/.config/picom/picom.conf
 # Display Wallpaper (light mode)
-# exec_always feh --bg-fill /home/fzykin/Images/background.jpg
+# exec_always feh --bg-fill $HOME/Images/background.jpg
 # Display Wallpaper (dark mode)
-exec_always feh --bg-fill /home/fzykin/Images/wallpapers/wallhaven-6d8wgq.png
+exec_always feh --bg-fill $HOME/Images/wallpapers/wallhaven-6d8wgq.png
 # exec_always xsetroot -solid "#303446"
 
 # Use pactl to adjust volume in PulseAudio.
@@ -233,7 +233,7 @@ client.background       #1C1C1E
 
 # bar
 bar {
-    status_command SCRIPT_DIR=/home/fzykin/.config/i3blocks/scripts/ i3blocks
+    status_command SCRIPT_DIR=$HOME/.config/i3blocks/scripts/ i3blocks
     position top
     separator_symbol "|"
       colors {
