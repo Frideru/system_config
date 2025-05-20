@@ -3,7 +3,7 @@
 The Releases page provides an AppImage that runs on most Linux systems. No installation is needed, just download nvim.appimage and run it. (It might not work if your Linux distribution is more than 4 years old.)
 
 ```bash
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+curl -L https://github.com/neovim/neovim/releases/download/v0.11.1/nvim-linux-x86_64.appimage ./nvim.appimage
 chmod u+x nvim.appimage
 ./nvim.appimage
 ```
