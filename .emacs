@@ -15,6 +15,7 @@
 (setq auto-save-default nil)      ; Отключить автосохранение
 (setq inhibit-startup-message t)  ; Отключить начальный экран
 (global-linum-mode t)             ; Включить номера строк
+(global-display-line-numbers-mode 1) ; Современный способ
 (tool-bar-mode -1)                ; Выключить паннель инструментов
 (scroll-bar-mode -1)              ; Выключить строку прокрутки
 
