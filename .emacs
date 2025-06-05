@@ -3,8 +3,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- ;;'(custom-enabled-themes '(wombat))
- '(package-selected-packages '(vscode-dark-plus-theme use-package)))
+ '(package-selected-packages '(company vscode-dark-plus-theme use-package)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -15,7 +14,6 @@
 (setq auto-save-default nil)      ; Отключить автосохранение
 (setq inhibit-startup-message t)  ; Отключить начальный экран
 (global-linum-mode t)             ; Включить номера строк
-(global-display-line-numbers-mode 1) ; Современный способ
 (tool-bar-mode -1)                ; Выключить паннель инструментов
 (scroll-bar-mode -1)              ; Выключить строку прокрутки
 
@@ -25,9 +23,6 @@
 ;; Добавьте MELPA в список источников пакетов
 (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/") t)
-
-;; Инициализируйте пакетный менеджер
-(package-initialize)
 
 ;; Установите use-package, если он еще не установлен
 (unless (package-installed-p 'use-package)
@@ -43,3 +38,22 @@
   :config
   (load-theme 'vscode-dark-plus t))
 
+;; Company-mode (автодополнение)
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+
+;; Установка company-mode, если он не установлен
+(unless (package-installed-p 'company)
+  (package-refresh-contents)
+  (package-install 'company))
+
+;; Включение company-mode
+(require 'company)  ;; Убедитесь, что company-mode загружен
+(add-hook 'after-init-hook 'global-company-mode)
+
+;; Включение company-files для автодополнения путей к файлам
+(add-to-list 'company-backends 'company-files)
+
+;; Настройки company-mode
+(setq company-minimum-prefix-length 1) ; Минимальная длина префикса для автодополнения
+(setq company-idle-delay 0.2) ; Задержка перед показом подсказок
