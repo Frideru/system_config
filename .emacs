@@ -10,12 +10,13 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "JetBrainsMono Nerd Font" :foundry "JB" :slant normal :weight normal :height 115 :width normal)))))
-(setq make-backup-files nil)      ; Отключить создание резервных копий
-(setq auto-save-default nil)      ; Отключить автосохранение
-(setq inhibit-startup-message t)  ; Отключить начальный экран
-(global-linum-mode t)             ; Включить номера строк
-(tool-bar-mode -1)                ; Выключить паннель инструментов
-(scroll-bar-mode -1)              ; Выключить строку прокрутки
+(setq make-backup-files nil)         ; Отключить создание резервных копий
+(setq auto-save-default nil)         ; Отключить автосохранение
+(setq inhibit-startup-message t)     ; Отключить начальный экран
+;(global-linum-mode t)             ; Включить номера строк
+(global-display-line-numbers-mode 1) ; Современный способ
+(tool-bar-mode -1)                   ; Выключить паннель инструментов
+(scroll-bar-mode -1)                 ; Выключить строку прокрутки
 
 ;; Убедитесь, что пакет 'package' загружен
 (require 'package)
