@@ -4,7 +4,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(magit centaur-tabs company vscode-dark-plus-theme use-package)))
+   '(go-mode magit centaur-tabs company vscode-dark-plus-theme use-package)))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -65,3 +65,16 @@
 ;; Git | It's Magit
 ;; M-x package-refresh-contents RET
 ;; M-x package-install RET magit RET
+
+;; Поддрежка GO
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+(package-initialize)
+
+(unless (package-installed-p 'go-mode)
+  (package-refresh-contents)
+  (package-install 'go-mode))
+
+(add-hook 'go-mode-hook (lambda ()
+                          (setq tab-width 4)
+                          (setq indent-tabs-mode 1)))
+
