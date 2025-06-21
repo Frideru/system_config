@@ -4,3 +4,4 @@
 mkidr -p $HOME/.norg
 mkidr -p $HOME/.wallpapers
 mkidr -p $HOME/.programs
+mkdir -p $HOME/.scripts
