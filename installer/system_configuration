@@ -1,6 +1,6 @@
 #!/bin/bash
 
 # -p Создать все директории, которые указаны внутри пути. Если какая-либо директория существует, то предупреждение об этом не выводится.
-mkidr -p $HOME/.notes
+mkidr -p $HOME/.norg
 mkidr -p $HOME/.wallpapers
 mkidr -p $HOME/.programs
