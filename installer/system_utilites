@@ -1,4 +1,3 @@
 #!/bin/bash
 
-# vim or emacs
-sudo apt install xorg i3 i3blocks slim terminator network-manager pulseaudio pavucontrol firefox-esr pkexec policykit-1 curl gcc xclip feh mc htop rofi vim kbdd
+sudo apt install xorg i3 i3blocks slim terminator network-manager pulseaudio pavucontrol firefox-esr pkexec policykit-1 curl gcc xclip feh mc htop rofi emacs kbdd
