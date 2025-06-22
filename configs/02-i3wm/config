@@ -23,7 +23,7 @@ default_floating_border normal
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
 
-#exec picom --config $HOME/.config/picom/picom.conf
+exec picom --config $HOME/.config/picom/picom.conf
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
@@ -35,7 +35,7 @@ exec --no-startup-id dex --autostart --environment i3
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
 #exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-bindsym ctrl+Mod1+l exec --no-startup-id bash -c 'i3lock -c 000000 -i $HOME/Images/wallpapers/g8ud4yocwbeb1.png && sleep 3 && xset dpms force off'
+bindsym ctrl+Mod1+l exec --no-startup-id bash -c 'i3lock -c 000000 -i $HOME/.wallpapers/abstract_warp_00.png && sleep 3 && xset dpms force off'
 bindsym ctrl+Mod1+p exec rofi -show power-menu -modi power-menu:rofi-power-menu
 bindsym Print exec flameshot gui --clipboard
 # NetworkManager is the most popular way to manage wireless networks on Linux,
@@ -67,7 +67,7 @@ floating_modifier $mod
 for_window [class="Lxappearance"] floating enable
 for_window [class="Pavucontrol"] floating enable resize set 900 500
 for_window [title="Терминатор Параметры"] floating enable 
-for_window [class="TelegramDesktop"] floating enable resize set 500 800
+for_window [class="TelegramDesktop"] floating enable resize set 450 700
 for_window [class="Nemo"] floating enable resize set 800 600
 
 for_window [class="firefox-esr"] move to workspace $ws1
