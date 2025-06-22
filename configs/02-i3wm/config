@@ -14,7 +14,7 @@ set $mod Mod4
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 # default monospace 8
-font pango: JetBrainsMonoNerdFont Regular 10
+font pango: HackNerdFont Regular 10
 
 default_border pixel 3
 default_floating_border normal
@@ -51,7 +51,7 @@ exec --no-startup-id $HOME/.scripts/arandr_config.sh
 # Display Wallpaper (light mode)
 # exec_always feh --bg-fill $HOME/Images/background.jpg
 # Display Wallpaper (dark mode)
-exec_always feh --bg-fill $HOME/Images/wallpapers/wallhaven-6d8wgq.png
+exec_always feh --bg-fill $HOME/.wallpapers/wallhaven.png
 # exec_always xsetroot -solid "#303446"
 
 # Use pactl to adjust volume in PulseAudio.
@@ -68,8 +68,9 @@ for_window [class="Lxappearance"] floating enable
 for_window [class="Pavucontrol"] floating enable resize set 900 500
 for_window [title="Терминатор Параметры"] floating enable 
 for_window [class="TelegramDesktop"] floating enable resize set 500 800
-for_window [class="Nemo"] floating enable resize set 800 600
+for_window [class="Thunar"] floating enable resize set 800 600
 
+for_window [class="firefox-esr"] move to workspace $ws1
 for_window [class="obsidian"] move to workspace $ws6
 for_window [class="vlc"] move to workspace $ws7
 for_window [class="thunderbird-default"] move to workspace $ws8
@@ -148,13 +149,13 @@ bindsym $mod+a focus parent
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1: "
 set $ws2 "2: "
-set $ws3 "3"
+set $ws3 "3: "
 set $ws4 "4"
 set $ws5 "5"
-set $ws6 "6:󰎚 "
+set $ws6 "6"
 set $ws7 "7:󰕼 "
 set $ws8 "8: "
-set $ws9 "9:󰈙 "
+set $ws9 "9"
 set $ws10 "10"
 
 # switch to workspace

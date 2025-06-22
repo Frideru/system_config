@@ -136,6 +136,6 @@ min_width=bat: ■
 
 
 [kbdd_layout]
-#command=$SCRIPT_DIR/kbdd_layout
+command=$SCRIPT_DIR/kbdd_layout
 interval=persist
 

@@ -6,7 +6,20 @@
 - [ ] Автоматическое создание нужных папок
 
 ## После установки всех пакетов
-Для использования NetworkManager нужно убать все, кроме строк `lo` в `/etc/interfaces` и перезагрузить систему (не помню точно как это сделать, пишу на память).
+Для использования `NetworkManager` нужно
+1. Перейти в `/etc/network/interfaces`
+2. Оставить только
+```config
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+source /etc/network/interfaces.d/*
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+```
+3. Перезагрузить систему.
 
 >NOTE:Нужно сделать авто установщик и авто развертывание конфигов и папок. Референсы ниже
 
