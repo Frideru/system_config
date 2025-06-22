@@ -2,4 +2,4 @@
 
 # NOTE: mutt picom conky lxappearance
 
-sudo apt install gnome-disk-utility arandr network-manager-gnome flameshot vlc libreoffice thunar blueman mousepad evince
+sudo apt install gnome-disk-utility arandr network-manager-gnome flameshot vlc libreoffice nemo blueman mousepad evince
