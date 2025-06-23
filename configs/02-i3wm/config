@@ -44,9 +44,13 @@ exec --no-startup-id nm-applet
 
 # exec_always --no-startup-id xrandr --output DVI-D-1 --rotate right
 # exec_always --no-startup-id xrandr --output HDMI-1 --rotate left
-exec --no-startup-id $HOME/.screenlayout/display.sh
+exec --no-startup-id $HOME/.scripts/arandr_config.sh
 
-# Display Wallpaper
+# Transparency with picom compositor
+# exec_always picom --config ~/.config/picom/picom.conf
+# Display Wallpaper (light mode)
+# exec_always feh --bg-fill $HOME/Images/background.jpg
+# Display Wallpaper (dark mode)
 exec_always feh --bg-fill $HOME/.wallpapers/wallhaven.png
 # exec_always xsetroot -solid "#303446"
 
@@ -70,6 +74,7 @@ for_window [class="firefox-esr"] move to workspace $ws1
 for_window [class="obsidian"] move to workspace $ws6
 for_window [class="vlc"] move to workspace $ws7
 for_window [class="thunderbird-default"] move to workspace $ws8
+for_window [class="Emacs"] move to workspace $ws3
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
