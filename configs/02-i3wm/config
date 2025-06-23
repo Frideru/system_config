@@ -44,13 +44,9 @@ exec --no-startup-id nm-applet
 
 # exec_always --no-startup-id xrandr --output DVI-D-1 --rotate right
 # exec_always --no-startup-id xrandr --output HDMI-1 --rotate left
-exec --no-startup-id $HOME/.scripts/arandr_config.sh
+exec --no-startup-id $HOME/.screenlayout/display.sh
 
-# Transparency with picom compositor
-# exec_always picom --config ~/.config/picom/picom.conf
-# Display Wallpaper (light mode)
-# exec_always feh --bg-fill $HOME/Images/background.jpg
-# Display Wallpaper (dark mode)
+# Display Wallpaper
 exec_always feh --bg-fill $HOME/.wallpapers/wallhaven.png
 # exec_always xsetroot -solid "#303446"
 
