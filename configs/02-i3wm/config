@@ -29,8 +29,8 @@ default_floating_border normal
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 
-# The combination of xss-lock, nm-applet and pactl is a popular choice, so
-# they are included here as an example. Modify as you see fit.
+# Графический интерфейс для аутентификации
+exec --no-startup-id lxpolkit
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
@@ -42,10 +42,11 @@ bindsym Print exec flameshot gui --clipboard
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-# Конфигурация монитора
+# exec_always --no-startup-id xrandr --output DVI-D-1 --rotate right
+# exec_always --no-startup-id xrandr --output HDMI-1 --rotate left
 exec --no-startup-id $HOME/.screenlayout/display.sh
 
-# Обои монитора
+# Display Wallpaper
 exec_always feh --bg-fill $HOME/.wallpapers/wallhaven.png
 # exec_always xsetroot -solid "#303446"
 
@@ -69,7 +70,6 @@ for_window [class="firefox-esr"] move to workspace $ws1
 for_window [class="obsidian"] move to workspace $ws6
 for_window [class="vlc"] move to workspace $ws7
 for_window [class="thunderbird-default"] move to workspace $ws8
-for_window [class="Emacs"] move to workspace $ws3
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
