@@ -70,6 +70,7 @@ for_window [class="firefox-esr"] move to workspace $ws1
 for_window [class="obsidian"] move to workspace $ws6
 for_window [class="vlc"] move to workspace $ws7
 for_window [class="thunderbird-default"] move to workspace $ws8
+for_window [class="Emacs"] move to workspace $ws3
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
