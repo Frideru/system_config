@@ -1,6 +1,2 @@
--- Импорт модулей Lua
-
-require('plugins')
-require('settings') 
-require('keymaps')
-require('treesitter')
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
