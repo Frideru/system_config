@@ -32,8 +32,10 @@ exec --no-startup-id dex --autostart --environment i3
 # Графический интерфейс для аутентификации
 exec --no-startup-id lxpolkit
 
-# Блокировка экрана
-bindsym ctrl+Mod1+l exec --no-startup-id bash -c 'i3lock -c 000000 -i $HOME/.wallpapers/abstract_warp_00.png && sleep 3 && xset dpms force off'
+# Блокировка экрана (i3lock)
+# bindsym ctrl+Mod1+l exec --no-startup-id bash -c 'i3lock -c 000000 -i $HOME/.wallpapers/abstract_warp_00.png && sleep 3 && xset dpms force off'
+# Блокировка экрана (lightdm)
+bindsym ctrl+Mod1+l exec dm-tool lock
 
 # Выключение пк через Rofi
 bindsym ctrl+Mod1+p exec rofi -show power-menu -modi power-menu:rofi-power-menu
