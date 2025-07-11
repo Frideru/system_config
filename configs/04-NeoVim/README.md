@@ -14,7 +14,31 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 7. Зайти в NeoVim и выполнить `:PackerSync`
 
 Вот и все!
+> Не актуальная с 6 пункта, теперь достаточно просто скопировать папку, потому что используется `lazyvim`
 
-## Дела на потом:
+# Конфигурация vim
+1. **Открыть**
+```bash
+vim ~/.vimrc
+```
+2. **.vimrc**
+```vimrc
+set nocompatible
+syntax on
+set number
+set relativenumber
+set mouse=a
+set ruler
+colorscheme slate
+set tabstop=4
+set shiftwidth=4
+set expandtab
+```
+3. **Дать конфиг для root**
+```bash
+ln -s /home/<user>/.vimrc /root/
+```
+
+# Дела на потом:
 - [ ] Взять скрипт для автоматической установки neovim
 - [ ] Автоматически устанавливать packer, если установился neovim
