@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # -p Создать все директории, которые указаны внутри пути. Если какая-либо директория существует, то предупреждение об этом не выводится.
-mkdir -p $HOME/.notes
 mkdir -p $HOME/.wallpapers
 mkdir -p $HOME/.programs
 mkdir -p $HOME/.scripts
