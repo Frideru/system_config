@@ -13,6 +13,7 @@ bash ./system_utilites
 bash ./system_other
 
 # Удаление мусора
+sudo apt clean
 sudo apt autoremove
 
 # Настройка конфигурации
