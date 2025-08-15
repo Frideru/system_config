@@ -4,14 +4,13 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(go-mode magit centaur-tabs company vscode-dark-plus-theme use-package)))
+   '(yaml-mode go-mode magit centaur-tabs company vscode-dark-plus-theme use-package)))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
-;; '(default ((t (:family "JetBrainsMono Nerd Font" :foundry "JB" :slant normal :weight normal :height 115 :width normal)))))
  '(default ((t (:family "Hack Nerd Font" :slant normal :weight normal :height 100 :width normal)))))
 
 (setq make-backup-files nil)         ; Отключить создание резервных копий
@@ -79,3 +78,10 @@
                           (setq tab-width 4)
                           (setq indent-tabs-mode 1)))
 
+(unless (package-installed-p 'yaml-mode)
+  (package-refresh-contents)
+  (package-install 'yaml-mode))
+
+;; Настройка yaml-mode
+(add-to-list 'auto-mode-alist '("\\.yaml\\'" . yaml-mode))
+(add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
