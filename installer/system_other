@@ -1,5 +1,5 @@
 #!/bin/bash
 
-# NOTE: mutt picom conky lxappearance
+# NOTE: mutt picom conky lxappearance nemo
 
-sudo apt install gnome-disk-utility arandr network-manager-gnome flameshot vlc nemo blueman mousepad evince emacs
+sudo apt install gnome-disk-utility arandr network-manager-gnome flameshot vlc blueman mousepad evince emacs
