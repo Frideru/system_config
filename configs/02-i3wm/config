@@ -78,7 +78,7 @@ bindsym $mod+Shift+q kill
 
 # [=== Rofi ===]
 # Октрыть Rofi
-bindsym $mod+d exec --no-startup-id rofi -show drun
+bindsym $mod+d exec --no-startup-id rofi -modi "drun,run,ssh" -show drun -show-icons
 
 # Выключение пк через Rofi
 bindsym ctrl+Mod1+p exec rofi -show power-menu -modi power-menu:rofi-power-menu
