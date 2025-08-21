@@ -4,7 +4,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(yaml-mode go-mode magit centaur-tabs company vscode-dark-plus-theme use-package)))
+   '(rust-mode yaml-mode go-mode magit centaur-tabs company vscode-dark-plus-theme use-package)))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -65,6 +65,9 @@
 ;; Git | It's Magit
 ;; M-x package-refresh-contents RET
 ;; M-x package-install RET magit RET
+
+;; M-x package-install rust-mode
+(require 'rust-mode)
 
 ;; Поддрежка GO
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
