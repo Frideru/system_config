@@ -3,3 +3,9 @@ theme = "github_dark"
 [editor]
 true-color = true
 line-number = "relative"
+bufferline = "multiple"
+color-modes = true
+
+[editor.cursor-shape]
+insert = "bar"
+select = "underline"
