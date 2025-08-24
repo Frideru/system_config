@@ -55,17 +55,6 @@ interval=1
 # separator=false
 # interval=30
 
-# Disk usage
-#
-# The directory defaults to $HOME if the instance is not specified.
-# The script may be called with a optional argument to set the alert
-# (defaults to 10 for 10%).
-[disk_usage]
-#label= :
-instance=/nas
-interval=30
-
-
 # Memory usage
 #
 # The type defaults to "mem" if the instance is not specified.
@@ -109,11 +98,6 @@ separator=false
 [time]
 command=date '+%d.%m.%Y %H:%M:%S'
 interval=5
-
-# [battery2]
-# command=$SCRIPT_DIR/battery2
-# markup=pango
-# interval=30
 
 [batterybar]
 command=$SCRIPT_DIR/batterybar
