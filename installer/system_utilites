@@ -1,4 +1,4 @@
 #!/bin/bash
 
-# NOTE: firefox-esr
-sudo apt install xorg i3 i3blocks lightdm terminator network-manager pulseaudio pavucontrol chromium pkexec polkitd lxpolkit curl gcc xclip feh mc htop rofi kbdd
+# NOTE: chromium
+sudo apt install xorg i3 i3blocks lightdm terminator network-manager pulseaudio pavucontrol firefox-esr pkexec polkitd lxpolkit curl gcc xclip feh mc htop rofi kbdd
