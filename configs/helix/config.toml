@@ -1,4 +1,4 @@
-theme = "github_dark" # vesper gruvbox_dark_soft gruvbox_light_soft everblush
+theme = "dark_plus" # github_dark vesper gruvbox_dark_soft gruvbox_light_soft everblush
 
 [editor]
 true-color = true
