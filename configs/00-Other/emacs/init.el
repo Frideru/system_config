@@ -81,26 +81,21 @@
 ;;
 ;; M-x package-install RET lsp-mode RET
 
-;; Поддержка Rust
-;; M-x package-install rust-mode
-(require 'rust-mode)
 
-;; Поддрежка GO
 (package-initialize)
 
-(unless (package-installed-p 'go-mode)
-  (package-refresh-contents)
-  (package-install 'go-mode))
+;; Rust
+(use-package rust-mode
+    :ensure t)
 
-(add-hook 'go-mode-hook (lambda ()
-                          (setq tab-width 4)
-                          (setq indent-tabs-mode 1)))
+;; Go
+(use-package go-mode
+    :ensure t
+    :hook (go-mode . (lambda ()
+                        (setq tab-width 4
+                            indent-tabs-mode t))))
 
-;; Поддержка Yaml
-(unless (package-installed-p 'yaml-mode)
-  (package-refresh-contents)
-  (package-install 'yaml-mode))
-
-;; Настройка yaml-mode
-(add-to-list 'auto-mode-alist '("\\.yaml\\'" . yaml-mode))
-(add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
+;; Yaml
+(use-package yaml-mode
+    :ensure t
+    :mode "\\.yml\\'\\|\\.yaml\\'")
