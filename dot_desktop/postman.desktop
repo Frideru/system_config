@@ -1,0 +1,9 @@
+[Desktop Entry]
+Categories=Development;
+Comment=Supercharge your API workflow
+Exec=/home/user/programs/Postman
+Icon=/home/user/programs/Postman/app/icons/icon_128x128.png
+Name=Postman
+Terminal=false
+Type=Application
+Version=1.0
