@@ -1,6 +1,8 @@
 #!/bin/bash
-# Script for auto install helix in system
-# hai - Helix auto install
+
+wget https://github.com/Frideru/system_config/raw/refs/heads/main/configs/helix/hx
+chmod +x hx
+sudo mv hx /usr/bin
 
 mkdir -p "$HOME/.config/helix"
 
@@ -17,8 +19,6 @@ color-modes = true
 insert = "bar"
 select = "underline"
 EOL
-
-sudo cp hx /usr/bin
 
 sudo mkdir -p /root/.config/helix
 sudo ln -sf $HOME/.config/helix/config.toml /root/.config/helix/config.toml
