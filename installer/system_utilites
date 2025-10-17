@@ -1,4 +1,0 @@
-#!/bin/bash
-
-# NOTE: chromium
-sudo apt install xorg i3 i3blocks lightdm terminator network-manager pulseaudio pavucontrol firefox-esr pkexec polkitd lxpolkit curl gcc xclip feh mc htop rofi kbdd
