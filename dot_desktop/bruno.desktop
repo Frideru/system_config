@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Bruno
+Exec=/home/user/.programs/bruno.AppImage
+Terminal=false
+Type=Application
+Icon=/home/user/.programs/icons/bruno.png
+StartupWMClass=Bruno
+X-AppImage-Version=2.13.2
+Comment=Opensource API Client for Exploring and Testing APIs
+Categories=Development;
