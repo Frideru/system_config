@@ -3,7 +3,6 @@
 
 Так же работает с Debian 13, но изменились классы у окон по пути `~/.config/i3/config.d/windows.conf`
 
-
 ## После установки всех пакетов
 Для использования `NetworkManager` нужно
 1. Перейти в `/etc/network/interfaces`
