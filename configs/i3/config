@@ -70,8 +70,8 @@ include $HOME/.config/i3/config.d/windows.conf
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec terminator
-#sakura #i3-sensible-terminal
+bindsym $mod+Return exec $HOME/.local/kitty.app/bin/kitty
+#i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
