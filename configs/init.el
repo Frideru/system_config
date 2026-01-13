@@ -176,24 +176,37 @@
         ("C-x t C-t" . treemacs-find-file)
         ("C-x t M-t" . treemacs-find-tag)))
 
+;; Подсвечивать линии отступов
+(use-package highlight-indent-guides
+  :ensure t
+  :hook (prog-mode . highlight-indent-guides-mode)
+  :config
+  ;; Варианты отображения: 'fill, 'column, 'character или 'bitmap
+  (setq highlight-indent-guides-method 'character)
+  
+  ;; Символ для линии (можно поставить "|", "¦", "┆" или "│")
+  (setq highlight-indent-guides-char ?│)
+  
+  ;; Подсвечивать активный уровень отступа (где сейчас курсор)
+  (setq highlight-indent-guides-responsive 'slow))
+
 
 ;; Инициализация пакетов завершена
 (when (not package--initialized)
   (package-initialize))
 
-;; Поправила нейросеть
+;; ^ Поправила нейросеть
 
 ;; Мои дополнения
-(windmove-default-keybindings)
-(setq windmove-wrap-around t)
+(windmove-default-keybindings 'meta) ;; Переключалка окон через Alt
+(setq windmove-wrap-around t)  ;; Когда справа (или слева) окна нет, переключит на крайнее левое (или правое). Так же работает и по вертикали
+
+(setq-default indent-tabs-mode nil) ; Всегда вставлять пробелы вместо табуляции
+(setq-default tab-width 2)          ; Ширина «виртуального» таба — 4 пробела
 
 ;; Бинд клавиш
-(global-set-key (kbd "M-<left>")  'windmove-left)
-(global-set-key (kbd "M-<right>") 'windmove-right)
-(global-set-key (kbd "M-<up>")    'windmove-up)
-(global-set-key (kbd "M-<down>")  'windmove-down)
+(global-set-key (kbd "C-c t") 'term) ; Открыть терминал
 
-(global-set-key (kbd "C-c t") 'term)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
