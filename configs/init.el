@@ -1,101 +1,94 @@
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   '(auto-complete rust-mode yaml-mode go-mode magit centaur-tabs company vscode-dark-plus-theme use-package)))
-
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(default ((t (:family "Hack Nerd Font" :slant normal :weight normal :height 100 :width normal)))))
-
-(setq make-backup-files nil)         ; Отключить создание резервных копий
-(setq auto-save-default nil)         ; Отключить автосохранение
-(setq inhibit-startup-message t)     ; Отключить начальный экран
-(global-display-line-numbers-mode 1) ; Включить отображение строк
-(tool-bar-mode -1)                   ; Выключить панель инструментов
-(scroll-bar-mode -1)                 ; Выключить строку прокрутки
-
-(ido-mode 1)                         ; Включить ido-mode
-(ido-everywhere 1)                   ; Включить ido для всех команд
-
-
+;; --- Настройка пакетного менеджера ---
 (require 'package)
 
-;; Добавьте MELPA в список источников пакетов
-(add-to-list 'package-archives
-             '("melpa" . "https://melpa.org/packages/") t)
+;; Настроим список архивов. Попробуем начать с официальных адресов.
+;; Если они будут блокироваться, можно будет легко переключиться на зеркала.
+;;(setq package-archives
+;;      '(("gnu"   . "https://elpa.gnu.org/packages/")
+;;        ("melpa" . "https://melpa.org/packages/")
+;;        ("org"   . "https://orgmode.org/elpa/") ; Раскомментируйте, если нужен org-elpa
+;;        ))
 
-;; use-package
+;; Если официальные сайты не работают, раскомментируйте следующие строки и закомментируйте блок выше.
+(setq package-archives
+      '(("gnu"   . "https://mirrors.ustc.edu.cn/elpa/gnu/")
+        ("melpa" . "https://mirrors.ustc.edu.cn/elpa/melpa/")
+        ("nongnu" . "https://mirrors.ustc.edu.cn/elpa/nongnu/")))
+
+;; Инициализация системы пакетов
+(package-initialize)
+
+;; Убедимся, что use-package установлен
 (unless (package-installed-p 'use-package)
-  (package-refresh-contents)
+  (package-refresh-contents) ;; Обновляем список пакетов перед установкой
   (package-install 'use-package))
 
+;; Загружаем use-package
 (require 'use-package)
 
+;; --- Настройки внешнего вида и поведения ---
+;; Отключение резервных копий и автосохранения
+(setq make-backup-files nil)
+(setq auto-save-default nil)
+(setq inhibit-startup-message t) ; Отключить начальный экран
 
-;; vscode theme
+;; Включить отображение номеров строк
+(global-display-line-numbers-mode 1)
+
+;; Отключить тулбар и скроллбар
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
+
+;; Ido mode для удобства
+(ido-mode 1)
+(ido-everywhere 1)
+
+;; Настройка шрифта (убедитесь, что шрифт Hack Nerd Font установлен в системе)
+(set-face-attribute 'default nil
+                    :family "Hack Nerd Font"
+                    :height 100
+                    :weight 'normal
+                    :width 'normal)
+
+;; --- Управление пакетами с помощью use-package ---
+;; Тема
 (use-package vscode-dark-plus-theme
   :ensure t
   :config
   (load-theme 'vscode-dark-plus t))
 
-;;
 ;; Company-mode (автодополнение)
-;; 
-;; Установка company-mode, если он не установлен
-(unless (package-installed-p 'company)
-  (package-refresh-contents)
-  (package-install 'company))
+(use-package company
+  :ensure t
+  :hook (after-init . global-company-mode) ;; Включить глобально после инициализации
+  :config
+  (add-to-list 'company-backends 'company-files) ;; Автодополнение файлов
+  (setq company-minimum-prefix-length 1        ;; Начинать автодополнение с 1 символа
+        company-idle-delay 0.3))               ;; Задержка перед показом подсказок
 
-;; Включение company-mode
-(require 'company)
-(add-hook 'after-init-hook 'global-company-mode)
-
-;; Включение company-files для автодополнения путей к файлам
-(add-to-list 'company-backends 'company-files)
-
-;; Настройки company-mode
-(setq company-minimum-prefix-length 1) ; Минимальная длина префикса для автодополнения
-(setq company-idle-delay 0.3) ; Задержка перед показом подсказок
-
-;;
-;; Auto complete
-;;
-;; M-x package-refresh-contents RET
-;; M-x package-install RET auto-complete RET
-;; (ac-config-default)
-
-;;
-;; Git | It's Magit
-;;
-;; M-x package-refresh-contents RET
-;; M-x package-install RET magit RET
-
-;;
-;; LSP
-;;
-;; M-x package-install RET lsp-mode RET
-
-
-(package-initialize)
-
-;; Rust
-(use-package rust-mode
-    :ensure t)
-
-;; Go
-(use-package go-mode
-    :ensure t
-    :hook (go-mode . (lambda ()
-                        (setq tab-width 4
-                            indent-tabs-mode t))))
-
-;; Yaml
+;; Yaml-mode
 (use-package yaml-mode
     :ensure t
     :mode "\\.yml\\'\\|\\.yaml\\'")
+
+;; Magit (Git)
+;;(use-package magit
+;;  :ensure t
+  ;; Можно добавить горячую клавишу, например C-x g
+  ;; :bind (("C-x g" . magit-status))
+;; )
+
+;; LSP Mode (раскомментируйте, когда будете готовы настраивать LSP)
+;; (use-package lsp-mode
+;;   :ensure t
+;;   :commands lsp)
+;; (use-package lsp-ui
+;;   :ensure t
+;;   :commands lsp-ui-mode)
+;; (use-package company-lsp
+;;   :ensure t
+;;   :commands company-lsp)
+
+;; Инициализация пакетов завершена
+(when (not package--initialized)
+  (package-initialize))
