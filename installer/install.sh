@@ -33,6 +33,11 @@ su $MAINUSER -с cp $HOME/system_config/fonts/Hack/* $HOME/.fonts/
 su $MAINUSER -с cp $HOME/system_config/fonts/JetBrainsMono/* $HOME/.fonts/
 su $MAINUSER -с fc-cache -f -v
 
+# Развертывание конфигов
 su $MAINUSER -с cp $HOME/system_config/configs/i3wm/* $HOME/.config/i3/
 su $MAINUSER -с cp $HOME/system_config/configs/i3blocks/ $HOME/.config/
+su $MAINUSER -c cp $HOME/system_config/configs/terminator/config $HOME/.config/terminator
+su $MAINUSER -c mkdir -p $HOME/.config/terminator
+
+# Установка rofi-power-menu
 cp /home/$MAINUSER/system_config/rofi-power-menu/rofi-power-menu/rofi-power-menu /usr/bin/
