@@ -9,8 +9,8 @@
 MAINUSER=$(cat /etc/passwd | grep 1000 | awk -F: '{print $1}')
 
 # Стандартный набор программ для установки
-# chromium terminator
-sudo apt install -y xorg i3 i3blocks lightdm network-manager pulseaudio pavucontrol firefox-esr pkexec polkitd lxpolkit curl gcc xclip feh mc htop rofi kbdd
+# chromium
+sudo apt install -y xorg i3 i3blocks lightdm terminator network-manager pulseaudio pavucontrol firefox-esr pkexec polkitd lxpolkit curl gcc xclip feh mc htop rofi kbdd
 
 # Дополнительный набор программ
 # mutt picom conky lxappearance emacs
