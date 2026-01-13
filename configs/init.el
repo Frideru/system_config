@@ -190,6 +190,20 @@
   ;; Подсвечивать активный уровень отступа (где сейчас курсор)
   (setq highlight-indent-guides-responsive 'slow))
 
+;; Подсвечивать ключевые слова в комментариях
+(use-package hl-todo
+  :ensure t
+  :hook (prog-mode . hl-todo-mode) ; Включает подсветку во всех режимах программирования
+  :config
+  ;; Можно добавить свои слова или изменить цвета
+  (setq hl-todo-keyword-faces
+        '(("TODO"   . "#FF0000")
+          ("FIXME"  . "#FF0000")
+          ("DEBUG"  . "#A020F0")
+          ("GOTCHA" . "#FF4500")
+          ("NOTE"   . "#1E90FF")
+          ("STUB"   . "#1E90FF"))))
+
 
 ;; Инициализация пакетов завершена
 (when (not package--initialized)
@@ -213,7 +227,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(treemacs yaml-mode with-editor vscode-dark-plus-theme use-package transient llama company)))
+   '(hl-todo treemacs yaml-mode with-editor vscode-dark-plus-theme use-package transient llama company)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
