@@ -52,19 +52,32 @@
 
 ;; --- Управление пакетами с помощью use-package ---
 ;; Тема
-(use-package vscode-dark-plus-theme
+(use-package catppuccin-theme
   :ensure t
+  :init
+  (setq catppuccin-flavor 'mocha) ;; Выбираем именно темный вариант Mocha
   :config
-  (load-theme 'vscode-dark-plus t))
+  (load-theme 'catppuccin t))
 
 ;; Company-mode (автодополнение)
 (use-package company
   :ensure t
-  :hook (after-init . global-company-mode) ;; Включить глобально после инициализации
+  :hook (after-init . global-company-mode)
   :config
-  (add-to-list 'company-backends 'company-files) ;; Автодополнение файлов
-  (setq company-minimum-prefix-length 1        ;; Начинать автодополнение с 1 символа
-        company-idle-delay 0.3))               ;; Задержка перед показом подсказок
+  ;; Настраиваем список источников (backends)
+  ;; 'company-capf — это основной источник (код), 'company-files — пути к файлам
+  (setq company-backends '((company-capf :with company-files)
+                           (company-dabbrev-code company-keywords)
+                           company-dabbrev))
+
+  (setq company-minimum-prefix-length 2 ;; Начинать с 2 символов
+        company-idle-delay 0.1          ;; Я уменьшил до 0.1 для мгновенного отклика
+        company-selection-wrap-around t ;; Позволяет зациклить список (после конца в начало)
+        company-tooltip-align-annotations t) ;; Чтобы типы данных (если есть) были прижаты вправо
+
+  ;; Чтобы меню не дергалось при наборе
+  (setq company-tooltip-limit 10)) ;; Максимум 10 строк в меню
+  
 
 ;; Yaml-mode
 (use-package yaml-mode
@@ -79,15 +92,24 @@
 ;; )
 
 ;; LSP Mode (раскомментируйте, когда будете готовы настраивать LSP)
-;; (use-package lsp-mode
-;;   :ensure t
-;;   :commands lsp)
-;; (use-package lsp-ui
-;;   :ensure t
-;;   :commands lsp-ui-mode)
-;; (use-package company-lsp
-;;   :ensure t
-;;   :commands company-lsp)
+;(use-package lsp-mode
+;  :ensure t
+;  :init
+  ;; Ускоряем работу (LSP очень прожорлив)
+;  (setq lsp-keymap-prefix "C-c l")
+;  :hook (;; Список языков, где включать LSP (добавьте свои)
+;         (python-mode . lsp)
+;         (js-mode . lsp)
+         ;; Включаем интеграцию с UI
+;         (lsp-mode . lsp-enable-which-key-integration))
+;  :commands lsp)
+
+;(use-package lsp-ui
+;  :ensure t
+;  :commands lsp-ui-mode
+;  :config
+;  (setq lsp-ui-doc-enable t)       ; Показывать документацию при наведении
+;  (setq lsp-ui-sideline-enable t)) ; Показывать ошибки справа от строки
 
 (use-package treemacs
   :ensure t
@@ -227,7 +249,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(hl-todo treemacs yaml-mode with-editor vscode-dark-plus-theme use-package transient llama company)))
+   '(catppuccin-theme hl-todo treemacs yaml-mode with-editor vscode-dark-plus-theme use-package transient llama company)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
