@@ -52,12 +52,17 @@
 
 ;; --- Управление пакетами с помощью use-package ---
 ;; Тема
-(use-package catppuccin-theme
+;(use-package catppuccin-theme
+;  :ensure t
+;  :init
+;  (setq catppuccin-flavor 'mocha) ;; Выбираем именно темный вариант Mocha
+;  :config
+;  (load-theme 'catppuccin t))
+
+(use-package gruvbox-theme
   :ensure t
-  :init
-  (setq catppuccin-flavor 'mocha) ;; Выбираем именно темный вариант Mocha
   :config
-  (load-theme 'catppuccin t))
+  (load-theme 'gruvbox-dark-medium t))
 
 ;; Company-mode (автодополнение)
 (use-package company
@@ -255,7 +260,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(docker-compose-mode docker dockerfile-mode catppuccin-theme hl-todo treemacs yaml-mode with-editor vscode-dark-plus-theme use-package transient llama company)))
+   '(gruvbox-theme docker-compose-mode docker dockerfile-mode catppuccin-theme hl-todo treemacs yaml-mode with-editor vscode-dark-plus-theme use-package transient llama company)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
