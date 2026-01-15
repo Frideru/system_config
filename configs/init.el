@@ -33,7 +33,7 @@
 (setq inhibit-startup-message t) ; Отключить начальный экран
 
 ;; Включить отображение номеров строк
-(global-display-line-numbers-mode 1)
+;;(global-display-line-numbers-mode 1)
 
 ;; Отключить тулбар и скроллбар
 (tool-bar-mode -1)
@@ -83,7 +83,6 @@
   ;; Чтобы меню не дергалось при наборе
   (setq company-tooltip-limit 10)) ;; Максимум 10 строк в меню
   
-
 ;; Yaml-mode
 (use-package yaml-mode
     :ensure t
@@ -94,33 +93,12 @@
   :ensure t
   :mode "Dockerfile\\'")
 
-
 ;; Magit (Git)
 ;;(use-package magit
 ;;  :ensure t
   ;; Можно добавить горячую клавишу, например C-x g
   ;; :bind (("C-x g" . magit-status))
 ;; )
-
-;; LSP Mode (раскомментируйте, когда будете готовы настраивать LSP)
-;(use-package lsp-mode
-;  :ensure t
-;  :init
-  ;; Ускоряем работу (LSP очень прожорлив)
-;  (setq lsp-keymap-prefix "C-c l")
-;  :hook (;; Список языков, где включать LSP (добавьте свои)
-;         (python-mode . lsp)
-;         (js-mode . lsp)
-         ;; Включаем интеграцию с UI
-;         (lsp-mode . lsp-enable-which-key-integration))
-;  :commands lsp)
-
-;(use-package lsp-ui
-;  :ensure t
-;  :commands lsp-ui-mode
-;  :config
-;  (setq lsp-ui-doc-enable t)       ; Показывать документацию при наведении
-;  (setq lsp-ui-sideline-enable t)) ; Показывать ошибки справа от строки
 
 (use-package treemacs
   :ensure t
@@ -237,19 +215,20 @@
           ("NOTE"   . "#1E90FF")
           ("STUB"   . "#1E90FF"))))
 
-
 ;; Инициализация пакетов завершена
 (when (not package--initialized)
   (package-initialize))
 
-;; ^ Поправила нейросеть
-
-;; Мои дополнения
-(windmove-default-keybindings 'meta) ;; Переключалка окон через Alt
+;; Переключалка окон через Alt
+(windmove-default-keybindings 'meta)
 (setq windmove-wrap-around t)  ;; Когда справа (или слева) окна нет, переключит на крайнее левое (или правое). Так же работает и по вертикали
 
-(setq-default indent-tabs-mode nil) ; Всегда вставлять пробелы вместо табуляции
-(setq-default tab-width 2)          ; Ширина «виртуального» таба — 4 пробела
+;; Управление табуляцией
+(setq-default indent-tabs-mode nil) ;; Всегда вставлять пробелы вместо табуляции
+(setq-default tab-width 2)          ;; Ширина «виртуального» таба — 4 пробела
+
+;; Поддержка выполнения shell внутри org
+(org-babel-do-load-languages 'org-babel-load-languages '((shell . t) (emacs-lisp . t)))
 
 ;; Бинд клавиш
 (global-set-key (kbd "C-c t") 'term) ; Открыть терминал
@@ -260,7 +239,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(gruvbox-theme docker-compose-mode docker dockerfile-mode catppuccin-theme hl-todo treemacs yaml-mode with-editor vscode-dark-plus-theme use-package transient llama company)))
+   '(verb gruvbox-theme docker-compose-mode docker dockerfile-mode catppuccin-theme hl-todo treemacs yaml-mode with-editor vscode-dark-plus-theme use-package transient llama company)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
