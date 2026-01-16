@@ -230,6 +230,13 @@
 ;; Поддержка выполнения shell внутри org
 (org-babel-do-load-languages 'org-babel-load-languages '((shell . t) (emacs-lisp . t)))
 
+;; Настройка пакета verb
+(use-package org
+  :mode ("\\.org\\'" . org-mode)
+  :config (define-key org-mode-map (kbd "C-c C-r") verb-command-map))
+
+(setq verb-auto-kill-response-buffers 2) ; удаление остальных буфферов с ответами кроме последних двух и текущего. Если этого не надо, то пишется просто t
+
 ;; Бинд клавиш
 (global-set-key (kbd "C-c t") 'term) ; Открыть терминал
 
