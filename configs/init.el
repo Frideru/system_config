@@ -215,6 +215,10 @@
           ("NOTE"   . "#1E90FF")
           ("STUB"   . "#1E90FF"))))
 
+;; Установка пакета verb
+(unless (package-installed-p 'verb)
+  (package-install 'verb))
+
 ;; Инициализация пакетов завершена
 (when (not package--initialized)
   (package-initialize))
