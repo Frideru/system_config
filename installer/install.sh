@@ -16,9 +16,6 @@ sudo apt install -y xorg i3 i3blocks lightdm terminator network-manager pulseaud
 # mutt picom conky lxappearance emacs
 sudo apt install -y arandr network-manager-gnome flameshot vlc blueman mousepad evince keepassxc ncdu nemo gnome-disk-utility tmux
 
-# Установка эмулятора терминала kitty
-curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
-
 # Удаление мусора
 sudo apt clean
 sudo apt autoremove
