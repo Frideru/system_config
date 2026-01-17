@@ -13,8 +13,8 @@ MAINUSER=$(cat /etc/passwd | grep 1000 | awk -F: '{print $1}')
 sudo apt install -y xorg i3 i3blocks lightdm terminator network-manager pulseaudio pavucontrol firefox-esr pkexec polkitd lxpolkit curl gcc xclip feh mc htop rofi kbdd
 
 # Дополнительный набор программ
-# mutt picom conky lxappearance emacs
-sudo apt install -y arandr network-manager-gnome flameshot vlc blueman mousepad evince keepassxc ncdu nemo gnome-disk-utility tmux
+# mutt picom conky lxappearance emacs keepassxc
+sudo apt install -y arandr network-manager-gnome flameshot vlc blueman mousepad evince ncdu nemo gnome-disk-utility tmux
 
 # Удаление мусора
 sudo apt clean
