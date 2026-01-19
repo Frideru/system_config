@@ -71,7 +71,7 @@ tiling_drag modifier titlebar
 
 # start a terminal
 bindsym $mod+Return exec terminator
-#i3-sensible-terminal
+#sakura #i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -218,4 +218,5 @@ bindsym $mod+r mode "resize"
 
 # [=== i3blocks ===]
 # Цвета и настройка i3bar (i3blocks)
-include $HOME/.config/i3/config.d/customization.conf
+#include $HOME/.config/i3/config.d/customization.conf
+include $HOME/.config/i3/config.d/gruvbox_theme.conf
