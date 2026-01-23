@@ -51,14 +51,8 @@
                     :width 'normal)
 
 ;; --- Управление пакетами с помощью use-package ---
-;; Тема
-;(use-package catppuccin-theme
-;  :ensure t
-;  :init
-;  (setq catppuccin-flavor 'mocha) ;; Выбираем именно темный вариант Mocha
-;  :config
-;  (load-theme 'catppuccin t))
 
+;; Gruvbox тема
 (use-package gruvbox-theme
   :ensure t
   :config
@@ -215,9 +209,30 @@
           ("NOTE"   . "#1E90FF")
           ("STUB"   . "#1E90FF"))))
 
-;; Установка пакета verb
-(unless (package-installed-p 'verb)
-  (package-install 'verb))
+;; tree-sitter
+(use-package tree-sitter
+  :ensure t
+  :config
+  ;; Включаем tree-sitter глобально
+  (global-tree-sitter-mode)
+  ;; Включаем улучшенную подсветку синтаксиса везде, где это возможно
+  (add-hook 'tree-sitter-after-on-hook #'tree-sitter-hl-mode))
+
+(use-package tree-sitter-langs
+  :ensure t
+  :after tree-sitter)
+
+;; Tree-sitter прицепится к ним автоматически через hook выше.
+
+;; Для Emacs 29+
+;; Пакеты tree-sitter и tree-sitter-langs БОЛЬШЕ НЕ НУЖНЫ
+;(setq major-mode-remap-alist
+;      '((js-mode . js-ts-mode)        ;; Перенаправляем на встроенный TS режим
+;        (typescript-mode . typescript-ts-mode)
+;        (python-mode . python-ts-mode)))
+;; Грамматики теперь нужно просто скачать одной командой:
+;; M-x treesit-install-language-grammar
+
 
 ;; Инициализация пакетов завершена
 (when (not package--initialized)
@@ -250,7 +265,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(verb gruvbox-theme docker-compose-mode docker dockerfile-mode catppuccin-theme hl-todo treemacs yaml-mode with-editor vscode-dark-plus-theme use-package transient llama company)))
+   '(lsp-mode verb gruvbox-theme docker-compose-mode docker dockerfile-mode catppuccin-theme hl-todo treemacs yaml-mode with-editor vscode-dark-plus-theme use-package transient llama company)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
