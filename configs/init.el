@@ -210,6 +210,8 @@
           ("STUB"   . "#1E90FF"))))
 
 ;; tree-sitter
+; if it is not install 
+; M-x package-refresh-contents
 (use-package tree-sitter
   :ensure t
   :config
@@ -222,27 +224,11 @@
   :ensure t
   :after tree-sitter)
 
-;; Tree-sitter прицепится к ним автоматически через hook выше.
-
-;; Для Emacs 29+
-;; Пакеты tree-sitter и tree-sitter-langs БОЛЬШЕ НЕ НУЖНЫ
-;(setq major-mode-remap-alist
-;      '((js-mode . js-ts-mode)        ;; Перенаправляем на встроенный TS режим
-;        (typescript-mode . typescript-ts-mode)
-;        (python-mode . python-ts-mode)))
-;; Грамматики теперь нужно просто скачать одной командой:
-;; M-x treesit-install-language-grammar
-
-;; Глобальные дефолты (план Б)
-;(setq-default indent-tabs-mode nil)
-;(setq-default tab-width 4)
-
 ;; Умная настройка через EditorConfig
 (use-package editorconfig
   :ensure t
   :config
   (editorconfig-mode 1))
-
 
 ;; Инициализация пакетов завершена
 (when (not package--initialized)
@@ -271,7 +257,9 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(editorconfig lsp-mode verb gruvbox-theme docker-compose-mode docker dockerfile-mode catppuccin-theme hl-todo treemacs yaml-mode with-editor vscode-dark-plus-theme use-package transient llama company)))
+   '(company dockerfile-mode gruvbox-theme highlight-indent-guides
+             hl-todo tree-sitter tree-sitter-langs treemacs verb
+             yaml-mode)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
