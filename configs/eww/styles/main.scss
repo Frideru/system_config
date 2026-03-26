@@ -1,0 +1,36 @@
+/* Сброс всех системных стилей */
+* {
+  all: unset;
+}
+
+/* Стилизация контейнера */
+.bar-main {
+  background-color: rgba(255, 255, 255, 0.65); /* Эффект стекла macOS */
+  color: #1d1d1f;
+  padding: 0 15px;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+  font-family: "Inter", "San Francisco", "Segoe UI", sans-serif;
+}
+
+/* Стили для всех меток (текста) */
+label {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.apple-icon {
+  font-size: 18px;
+  margin-right: 12px;
+  padding: 0 6px;
+  color: #000;
+}
+
+.app-name {
+  font-weight: 700;
+}
+
+.stat-icon {
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 15px;
+  margin-left: 15px;
+}

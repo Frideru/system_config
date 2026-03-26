@@ -1,0 +1,38 @@
+;; Переменные для системной информации
+(defpoll time :interval "1s" "date '+%H:%M'")
+(defpoll date :interval "10s" "date '+%a %d %b'")
+
+(defwindow main
+  :monitor 0
+  :stacking "fg"
+  :exclusive true
+  :focusable false
+  :windowtype "dock"
+  :geometry (geometry :x "0%" :y "0%" :width "100%" :height "32px" :anchor "top center")
+  (bar_layout))
+
+(defwidget bar_layout []
+  ;; Класс .bar-main — это наш основной холст
+  (box :class "bar-main" :orientation "h"
+    (centerbox :orientation "h"
+      (left_stuff)
+      (center_stuff)
+      (right_stuff))))
+
+;; Левая часть: Меню и активное приложение
+(defwidget left_stuff []
+  (box :class "left-stuff" :orientation "h" :space-evenly false :halign "start"
+    (button :class "apple-icon" "")
+    (label :class "app-name" :text "Finder")))
+
+;; Центральная часть: Дата и время
+(defwidget center_stuff []
+  (box :class "center-stuff" :orientation "h" :halign "center"
+    (label :text "${date}  ${time}")))
+
+;; Правая часть: Системные иконки (статичный пример)
+(defwidget right_stuff []
+  (box :class "right-stuff" :orientation "h" :space-evenly false :halign "end"
+    (label :class "stat-icon" :text "")
+    (label :class "stat-icon" :text "  ")
+    (label :class "stat-icon" :text "")))

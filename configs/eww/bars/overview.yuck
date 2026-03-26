@@ -1,0 +1,43 @@
+(defwindow bar
+  :monitor 0
+  :windowtype "toolbar"
+  :geometry (geometry :x "0%"
+                      :y "0%"
+                      :width "40px"
+                      :height "100px"
+                      :anchor "left center")
+  :stacking "fg"
+  :exclusive false
+  (sidestuff))
+
+(defwidget sidestuff []
+  (box :class "sidestuff" :orientation "v" :space-evenly false :valign "end"
+    (metric :label ""
+            :value {EWW_CPU.avg}
+            :onchange "")
+    (metric :label ""
+            :value {EWW_RAM.used_mem_perc}
+            :onchange "")
+    (time)))
+
+(defwidget metric [label value onchange]
+  (box :orientation "v"
+       :class "metric"
+       :space-evenly false
+       :halign "center"
+    (box :class "label" label)
+    (scale :min 0
+           :max 100
+           :active {onchange != ""}
+           :value value
+           :onchange onchange
+           :orientation "v"
+           :flipped true
+           :height 50)))
+
+(defwidget time []
+  (box :class "time"
+       :orientation "v"
+       :valign "end"
+    (label :text {formattime(EWW_TIME, "%H")})
+    (label :text {formattime(EWW_TIME, "%M")})))

@@ -1,0 +1,38 @@
+* {
+  all: unset;
+}
+
+.sidestuff {
+  background-color: #1e1e2e; // Темный фон (Catppuccin style)
+  color: #cdd6f4;
+  border-radius: 0 10px 10px 0;
+  padding: 5px 15px;
+}
+
+.metric {
+  margin-right: 20px;
+  scale {
+    min-height: 100px;
+    background-color: #313244;
+    trough {
+      background-color: #45475a;
+      min-width: 10px;
+      border-radius: 5px;
+      highlight {
+        background-color: #89b4fa;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+.label {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.time {
+  font-weight: bold;
+  font-size: 16px;
+  color: #f5c2e7;
+}
