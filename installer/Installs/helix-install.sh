@@ -2,7 +2,7 @@
 
 wget https://github.com/Frideru/system_config/raw/refs/heads/main/configs/helix/hx
 chmod +x hx
-sudo mv hx /usr/bin
+sudo mv hx /usr/local/bin
 
 mkdir -p "$HOME/.config/helix"
 
